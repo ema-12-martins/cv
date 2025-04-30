@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fundo cinza claro -->
+    <solid android:color="#D3D3D3" /> <!-- LightGray -->
+
+    <!-- Bordas arredondadas -->
+    <corners android:radius="12dp" />
+
+    <!-- Contorno opcional (preto, por exemplo) -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000" />
+</shape>

@@ -1,0 +1,210 @@
+[
+    {
+        "_id":"r1",
+        "nome":"Bolo de laranja",
+        "foto": "r1.jpeg",
+        "tempo_preparacao":"15min",
+        "dificuldade":"Fácil",
+        "ingredientes":[
+            "2 laranjas",
+            "5 ovos",
+            "2 chávenas de farinha para bolos",
+            "1 chávena e 3/4 de açucar",
+            "1 chávena de óleo",
+            "1 colher de sopa de fermento"
+        ],
+        "passos":[
+            "Bata no liquidificador os ovos, as laranjas cortadas em pedaços, com casca e sem caroços, o óleo e o açucar.",
+            "Após 4min a bater, adicione a farinha e o fermento e bata durante mais 2 minutos.",
+            "Unte uma forma com buraco com manteiga e pulvilhe com farinha.",
+            "Leve ao forno pré-aquecido a 180º por cerca de 45min."
+        ]
+    },
+    {
+        "_id":"r2",
+        "nome":"Brownies de chocolate",
+        "foto": "r2.jpeg",
+        "tempo_preparacao":"15min",
+        "dificuldade":"Fácil",
+        "ingredientes":[
+            "4 ovos",
+            "1 chávena de açucar",
+            "1 barra de chocolate de culinária",
+            "2 colheres de sopa de manteiga",
+            "1 chávena de chocolate em pó",
+            "1 pitada de sal",
+            "1 chávena de farinha para bolos",
+            "3 colheres de café de fermento",
+            "Leite q.b."
+
+        ],
+        "passos":[
+            "Misture numa tigela os ovos com o açucar.",
+            "Noutra tigela, misture a barra de chocolate em pedaços com a manteiga e o leite. Quanto mais leite adicionar, mais húmido ficará.",
+            "Leve ao microondas o último preparado, aquecendo de 30 em 30 segundos até ficar homogénio.",
+            "Junte os 2 preparados e misture até que fiquem homogéneos.",
+            "Adicione o chocolate em pó e a pitada de sal.",
+            "Adicione o fermento e o chocolate em pó e misture até ficar homogéneo.",
+            "Unte uma forma raza e polvilhe-a com farinha",
+            "Coloque o preparado no forno pré-aquecido a 160º durante 10-15 minutos."
+
+        ]
+    },
+    {
+        "_id":"r3",
+        "nome":"Cheescake de coco e limão",
+        "foto": "r3.jpeg",
+        "tempo_preparacao":"2h",
+        "dificuldade":"Médio",
+        "ingredientes":[
+            "180grs de bolacha Maria ralada",
+            "120grs de manteiga",
+            "1 lata de leite condensado com 397grs",
+            "200grs de queijo fresco para barrar",
+            "200ml de natas para bater",
+            "125ml de leite",
+            "6 folhas de gelatina",
+            "80grs de coco ralado",
+            "1 colher de sopa de Maisena",
+            "230grs de açucar",
+            "sumo de 3 limões pequenos"
+        ],
+        "passos":[
+            "Num tacho, leve ao lume a manteiga e deixe derreter.",
+            "Quando estiver derretida, desligue o lume e misture a bolacha Maria",
+            "Numa forma de arco removivel, coloque o preparado e acalque bem para que a base fique com compacta.",
+            "Leve ao congelador enquanto prepara a camada de acima.",
+            "Demolhe as folhas de gelatina durante 5 minutos",
+            "Num tacho, leve ao lume o leite e deixe-o aquecer.",
+            "Quando o leite estiver quente, adicione as folhas de gelatina bem escorridas e mexa.",
+            "Noutro recipiente, bata as natas durante 2 minutos.",
+            "Continue a bater as natas e adicione em simultâneo o queijo fresco, o leite condensado o coco e o leite com as folhas de gelatina até ficar homogéneo.",
+            "Coloque o preparado sobre a base que estava no frigorífico e leve ao congelador durante, pelo menos, 2 horas.",
+            "Para a última camada, num tacho a lume médio coloque o açucar, a farinha Maisena e vá adicionando os ovos 1 a 1.",
+            "Adicione o sumos dos limões edeixe engrossar.",
+            "Quando começar a borbulhar, apague o lume e deixe arrefecer.",
+            "Espalhe o preparado por cima das outras camadas e alise.",
+            "Leve novamente ao congelador durante 2 horas ou deixe no frigorífico durante a noite."
+
+        ]
+    },
+    {
+        "_id":"r4",
+        "nome":"Bolo de caneca de banana",
+        "foto": "r4.jpeg",
+        "tempo_preparacao":"5min",
+        "dificuldade":"Fácil",
+        "ingredientes":[
+            "3 colheres e 1/2 de sopa de farinha de trigo",
+            "2 colheres de sopa de açucar",
+            "1 banana madura",
+            "1 ovo médio",
+            "2 colheres de sopa de leite",
+            "1 colher de chá de fermento para bolos"
+
+        ],
+        "passos":[
+            "Amasse a banana até ficar em puré. Deixe alguns grumos para dar sabor",
+            "Misture numa chávena a banana com o ovo e o leite e misture bem",
+            "Adicione a farinha e o açucar e misture novamente.",
+            "Coloque o fermento e misture",
+            "Leve ao microondas, na potência máxima, por 3 minutos"
+
+        ]
+    },
+    {
+        "_id":"r5",
+        "nome":"Crumble de maçã e aveia",
+        "foto": "r5.jpeg",
+        "tempo_preparacao":"40min",
+        "dificuldade":"Fácil",
+        "ingredientes":[
+            "6-8 maçãs",
+            "1 colher de chá de canela",
+            "160grs de farinha integral",
+            "100grs de manteiga aos pedaços",
+            "100grs de açucar amarelo",
+            "1 colher de chã de canela",
+            "1/2 chávena de flocos de aveia"
+        ],
+        "passos":[
+            "Pré-aquça o forno a 180º",
+            "Descasque as maçãs e corte-as aos quadradinhos.",
+            "Coloque-as numa panela e polvilhe com a canela.",
+            "Deixe cozinhar até perder água. Mexa de vez em quando para não agarrarem.",
+            "Após estarem prontas, deixe-as arrefecer um bocadinho.",
+            "Entretanto, numa taça, junte a farinha, a manteiga, o açucar, a canela e a aveia.",
+            "Misture ligueiramente com as mãos, incorpurando a manteiga nos ingredientes secos, formando uma massa arenosa.",
+            "Coloque numa travessa para ir ao forno a maça e por cima o preparado.",
+            "Leve ao forno durante 30 minutos ou até a crosta ficar dourada.",
+            "Sirva morno ou frio."
+
+        ]
+    },
+    {
+        "_id":"r6",
+        "nome":"Mousse de Oreo",
+        "foto": "r6.jpeg",
+        "tempo_preparacao":"10min",
+        "dificuldade":"Fácil",
+        "ingredientes":[
+            "1 pacote de bolacha Oreo",
+            "1 lata de leite condensado",
+            "2 pacotes de natas"
+        ],
+        "passos":[
+            "Pique as oreos. Se quiser, reserve algumas para decorar.",
+            "Bata as natas até que fiquem bem firmes.",
+            "Continue a bater, adicionando agora p leite consensado e as bolachas picadas.",
+            "Coloque o preparado numa taça ou em taças individuais e leve ao frio durante, no mínimo, 2 horas."
+        ]
+    },
+    {
+        "_id":"r7",
+        "nome":"Bolo de yogurt",
+        "foto": "r7.jpeg",
+        "tempo_preparacao":"15min",
+        "dificuldade":"Fácil",
+        "ingredientes":[
+            "4 ovos",
+            "1 yogurt natural açucarado",
+            "2 copos de yogurt com açucar branco",
+            "1 copo de yogurt the óleo",
+            "3 copos de iogurt de farinha para bolos",
+            "1 colher de chá de fermento em pó"
+        ],
+        "passos":[
+            "Pré-aqueça o forno a 180 ºC.",
+            "Bata os ovos por 4 minutos.",
+            "Acrescente o yogurt, o açucar, o óleo a farinha até ficar bem homogéneo.",
+            "Adicione a farinha e bata por mais 1 minuto.",
+            "Leve ao forno com a forma untada com manteiga e polvilhada com farinha por 30-40min até que a parte superior do bolo esteja bem torrada."
+        ]
+    },
+    {
+        "_id":"r8",
+        "nome":"Bolachas de manteiga",
+        "foto": "r8.jpeg",
+        "tempo_preparacao":"1h",
+        "dificuldade":"Médio",
+        "ingredientes":[
+            "250grs de manteiga derretida",
+            "250grs de açúcar",
+            "1 colher de chá de aroma de baunilha",
+            "550grs de farinha",
+            "1 ovo",
+            "Farinha q.b. para estender a massa e polvilhar os tabuleiros",
+            "1 tablete de chocolate de culinária 70% cacau."
+        ],
+        "passos":[
+            "Pré-aqueça o forno a 150ºC.",
+            "Misture o açúcar com a manteiga derretida e o aroma de baunilha até ficar bem homogéneo.",
+            "Acrescente aos poucos a farianha até tudo ficar bem uniforme.",
+            "Adicione o ovo até ficar tudo homogéneo.",
+            "Deixe a massa repousar no frigorífico por 30min.",
+            "Enfarinhe uma superfície lisa e coloque um bocado de massa, extenda-a e corte com um molde. Se a massa estiver muito fina, acrescente farinha até conseguir facilmente manuseá-la. Repita este passo até a massa acabar.",
+            "Leve os recortes ao forno em papel vegetal por 10-15min ou até estarem bem douradinhas.",
+            "Após prontas, mergulhe no chocolate de culinária derretido. Pode as comer de imediato ou esperar que o chocolate solidifique."
+        ]
+    }
+]
