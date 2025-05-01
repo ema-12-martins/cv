@@ -1,0 +1,62 @@
+cabal-version:      2.4
+name:               2022li1g025
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+author:             Henrique Nuno Marinho Malheiro  <a97455@alunos.uminho.pt>
+                    Ema Maria Monteiro Martins  <a97678@alunos.uminho.pt>
+
+library
+  exposed-modules:
+    Main
+    LI12223
+    Tarefa1_2022li1g025
+    Tarefa2_2022li1g025
+    Tarefa3_2022li1g025
+    Tarefa4_2022li1g025
+    Tarefa5_2022li1g025
+    Tarefa1_2022li1g025_Spec
+    Tarefa2_2022li1g025_Spec
+    Tarefa3_2022li1g025_Spec
+    Tarefa4_2022li1g025_Spec
+    Tarefa5_2022li1g025_Spec
+  build-depends:    base ^>=4.16.3.0,random,gloss,HUnit
+  hs-source-dirs:   tests src
+  default-language: Haskell2010
+
+executable 2022li1g025
+  main-is:          Main.hs
+  other-modules:
+    LI12223
+    Tarefa1_2022li1g025
+    Tarefa2_2022li1g025
+    Tarefa3_2022li1g025
+    Tarefa4_2022li1g025
+    Tarefa5_2022li1g025
+  build-depends:    base ^>=4.16.3.0,random,gloss
+  hs-source-dirs:   src
+  default-language: Haskell2010
+
+test-suite 2022li1g025-tests
+  type:                 exitcode-stdio-1.0
+  main-is:              Spec.hs
+  other-modules:
+    LI12223
+    Tarefa1_2022li1g025
+    Tarefa2_2022li1g025
+    Tarefa3_2022li1g025
+    Tarefa4_2022li1g025
+    Tarefa5_2022li1g025
+    Tarefa1_2022li1g025_Spec
+    Tarefa2_2022li1g025_Spec
+    Tarefa3_2022li1g025_Spec
+    Tarefa4_2022li1g025_Spec
+    Tarefa5_2022li1g025_Spec
+  build-depends:        base ^>=4.16.3.0, HUnit
+  hs-source-dirs:       tests src
+  default-language:     Haskell2010
