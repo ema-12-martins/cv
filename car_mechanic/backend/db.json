@@ -1,0 +1,783 @@
+{
+  "motivos": [
+    {
+      "id": "1",
+      "motivo": "Más condições do veículo",
+      "tabela": false
+    },
+    {
+      "id": "2",
+      "motivo": "Falta de autorização do cliente",
+      "tabela": false
+    },
+    {
+      "id": "3",
+      "motivo": "Falta de peças",
+      "tabela": true
+    },
+    {
+      "id": "4",
+      "motivo": "Problemas mecânicos",
+      "tabela": false
+    },
+    {
+      "id": "5",
+      "motivo": "Falta de informações",
+      "tabela": false
+    },
+    {
+      "id": "6",
+      "motivo": "Outros",
+      "tabela": false
+    }
+  ],
+  "pecas": [
+    {
+      "id": "1",
+      "parte": "Discos de Travão",
+      "numero": 0
+    },
+    {
+      "id": "2",
+      "parte": "Pastilhas de Travão",
+      "numero": 0
+    },
+    {
+      "id": "3",
+      "parte": "Óleo do Motor",
+      "numero": 0
+    },
+    {
+      "id": "4",
+      "parte": "Filtro de Ar",
+      "numero": 0
+    },
+    {
+      "id": "5",
+      "parte": "Amortecedores",
+      "numero": 0
+    },
+    {
+      "id": "6",
+      "parte": "Bateria de Carro",
+      "numero": 0
+    },
+    {
+      "id": "7",
+      "parte": "Correia de Distribuição",
+      "numero": 0
+    },
+    {
+      "id": "8",
+      "parte": "Pneus",
+      "numero": 0
+    },
+    {
+      "id": "9",
+      "parte": "Lâmpadas de Farol",
+      "numero": 0
+    },
+    {
+      "id": "10",
+      "parte": "Escovas do Para-Brisa",
+      "numero": 0
+    },
+    {
+      "id": "11",
+      "parte": "Kit de Embraiagem",
+      "numero": 0
+    },
+    {
+      "id": "12",
+      "parte": "Radiador",
+      "numero": 0
+    },
+    {
+      "id": "13",
+      "parte": "Filtro de Combustível",
+      "numero": 0
+    },
+    {
+      "id": "14",
+      "parte": "Escovas do Motor",
+      "numero": 0
+    },
+    {
+      "id": "15",
+      "parte": "Conjunto de Juntas",
+      "numero": 0
+    }
+  ],
+  "mecanicos": [
+    {
+      "id": "1",
+      "nome_utilizador": "venancio",
+      "pass_utilizador": "1234",
+      "posto": "4",
+      "especializacao": "Motores a combustão",
+      "foto": "mecanico.png"
+    },
+    {
+      "id": "2",
+      "nome_utilizador": "maria",
+      "pass_utilizador": "4321",
+      "posto": "2",
+      "especializacao": "Motores a elétricos",
+      "foto": "552721.png"
+    }
+  ],
+  "service-definitions": [
+    {
+      "id": "sp",
+      "descr": "Substituir pneus",
+      "duração": 40
+    },
+    {
+      "id": "cr",
+      "descr": "Calibrar rodas",
+      "duração": 20
+    },
+    {
+      "id": "ad",
+      "descr": "Alinhar direção",
+      "duração": 30
+    },
+    {
+      "id": "sct",
+      "descr": "Subsituir calços travões",
+      "duração": 60
+    },
+    {
+      "id": "mot",
+      "descr": "Mudar óleo travões",
+      "duração": 20
+    },
+    {
+      "id": "li",
+      "descr": "Limpeza interior",
+      "duração": 120
+    },
+    {
+      "id": "le",
+      "descr": "Limpeza exterior",
+      "duração": 30
+    },
+    {
+      "id": "sfah",
+      "descr": "Substituir filtro ar habitáculo",
+      "duração": 30
+    },
+    {
+      "id": "mom",
+      "descr": "Mudar óleo motor",
+      "duração": 10
+    },
+    {
+      "id": "sfo",
+      "descr": "Substituir filtro óleo",
+      "duração": 20
+    },
+    {
+      "id": "sfc",
+      "descr": "Substituir filtro combustível",
+      "duração": 30
+    },
+    {
+      "id": "sfam",
+      "descr": "Substituir filtro ar motor",
+      "duração": 30
+    },
+    {
+      "id": "scc",
+      "descr": "Substituir conversor catalítico",
+      "duração": 30
+    },
+    {
+      "id": "sba",
+      "descr": "Substituir bateria de arranque",
+      "duração": 30
+    },
+    {
+      "id": "svi",
+      "descr": "Substituir velas de incandescência",
+      "duração": 30
+    },
+    {
+      "id": "sfp",
+      "descr": "Substituir filtro de partículas",
+      "duração": 30
+    },
+    {
+      "id": "rfp",
+      "descr": "Regenerar filtro de partículas",
+      "duração": 30
+    },
+    {
+      "id": "sva",
+      "descr": "Substituir válvula do acelerador",
+      "duração": 30
+    },
+    {
+      "id": "svi",
+      "descr": "Substituir velas de ignição",
+      "duração": 30
+    },
+    {
+      "id": "adb",
+      "descr": "Avaliar desempenho da bateria",
+      "duração": 30
+    },
+    {
+      "id": "sb",
+      "descr": "Substituir bateria",
+      "duração": 20
+    }
+  ],
+  "vehicle-types": [
+    {
+      "id": "gasolina",
+      "serviços": [
+        "sp",
+        "cr",
+        "ad",
+        "sct",
+        "mot",
+        "li",
+        "le",
+        "sfah",
+        "mom",
+        "sfo",
+        "sfc",
+        "sfam",
+        "scc",
+        "sba",
+        "sva",
+        "svi"
+      ]
+    },
+    {
+      "id": "gasoleo",
+      "serviços": [
+        "sp",
+        "cr",
+        "ad",
+        "sct",
+        "mot",
+        "li",
+        "le",
+        "sfah",
+        "mom",
+        "sfo",
+        "sfc",
+        "sfam",
+        "scc",
+        "sba",
+        "svi",
+        "sfp",
+        "rfp"
+      ]
+    },
+    {
+      "id": "eletrico",
+      "serviços": [
+        "sp",
+        "cr",
+        "ad",
+        "sct",
+        "mot",
+        "li",
+        "le",
+        "sfah",
+        "adb",
+        "sb"
+      ]
+    },
+    {
+      "id": "hibrido",
+      "serviços": [
+        "sp",
+        "cr",
+        "ad",
+        "sct",
+        "mot",
+        "li",
+        "le",
+        "sfah",
+        "mom",
+        "sfo",
+        "sfc",
+        "sfam",
+        "scc",
+        "sba",
+        "sva",
+        "svi",
+        "adb",
+        "sb"
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "id": "123",
+      "nome": "João Silva",
+      "email": "js@imail.com",
+      "telefone": "912345678",
+      "Nif": "123456789"
+    },
+    {
+      "id": "124",
+      "nome": "Maria Santos",
+      "email": "jms@imail.com",
+      "telefone": "912345679",
+      "Nif": "987654321"
+    },
+    {
+      "id": "125",
+      "nome": "José Pereira",
+      "email": "jp@imail.com",
+      "telefone": "912345680",
+      "Nif": "323456788"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "08-25-AA",
+      "Marca": "Renault",
+      "Modelo": "Clio",
+      "clientId": "123",
+      "vehicle-typeId": "gasolina",
+      "cilindrada": 1000,
+      "kms": 200000
+    },
+    {
+      "id": "AH-31-BB",
+      "Marca": "BMW",
+      "Modelo": "320",
+      "clientId": "124",
+      "vehicle-typeId": "gasoleo",
+      "cilindrada": 2000,
+      "kms": 120000
+    },
+    {
+      "id": "AH-32-44",
+      "Marca": "Mercedes",
+      "Modelo": "C220",
+      "clientId": "123",
+      "vehicle-typeId": "eletrico",
+      "potencia": 200,
+      "kms": 20000
+    },
+    {
+      "id": "AH-21-25",
+      "Marca": "Toyota",
+      "Modelo": "Prius",
+      "clientId": "125",
+      "vehicle-typeId": "hibrido",
+      "cilindrada": 1000,
+      "potencia": 200,
+      "kms": 80000
+    }
+  ],
+  "services": [
+    {
+      "id": "s1",
+      "vehicleId": "08-25-AA",
+      "definitionId": "sp",
+      "estado": "realizado",
+      "mecanico": "1",
+      "agendamento": "programado",
+      "data": {
+        "dia": 1,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s2",
+      "vehicleId": "08-25-AA",
+      "definitionId": "li",
+      "estado": "realizado",
+      "mecanico": "1",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 2,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s3",
+      "vehicleId": "AH-31-BB",
+      "definitionId": "sp",
+      "estado": "realizado",
+      "mecanico": "1",
+      "agendamento": "programado",
+      "data": {
+        "dia": 3,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s4",
+      "vehicleId": "AH-31-BB",
+      "definitionId": "ad",
+      "estado": "realizado",
+      "mecanico": "1",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 4,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s5",
+      "vehicleId": "AH-32-44",
+      "definitionId": "sfo",
+      "estado": "realizado",
+      "mecanico": "1",
+      "agendamento": "programado",
+      "data": {
+        "dia": 5,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s6",
+      "vehicleId": "08-25-AA",
+      "definitionId": "sp",
+      "estado": "parado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 6,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": "Falta de autorização do cliente"
+    },
+    {
+      "id": "s7",
+      "vehicleId": "08-25-AA",
+      "definitionId": "li",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 7,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s8",
+      "vehicleId": "AH-31-BB",
+      "definitionId": "sp",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 8,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s9",
+      "vehicleId": "AH-31-BB",
+      "definitionId": "ad",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 9,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s10",
+      "vehicleId": "AH-32-44",
+      "definitionId": "sfo",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 10,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s11",
+      "vehicleId": "AH-32-44",
+      "definitionId": "le",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 11,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s12",
+      "vehicleId": "AH-21-25",
+      "definitionId": "li",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 12,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s13",
+      "vehicleId": "AH-21-25",
+      "definitionId": "sp",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 13,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s14",
+      "vehicleId": "08-25-AA",
+      "definitionId": "ad",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 14,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s15",
+      "vehicleId": "08-25-AA",
+      "definitionId": "li",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 15,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s16",
+      "vehicleId": "AH-31-BB",
+      "definitionId": "sp",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 16,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s17",
+      "vehicleId": "AH-31-BB",
+      "definitionId": "ad",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 17,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s18",
+      "vehicleId": "AH-32-44",
+      "definitionId": "sfo",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 18,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s19",
+      "vehicleId": "AH-32-44",
+      "definitionId": "le",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 19,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s20",
+      "vehicleId": "AH-21-25",
+      "definitionId": "li",
+      "estado": "naoIniciado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 20,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s21",
+      "vehicleId": "08-25-AA",
+      "definitionId": "sp",
+      "estado": "parado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 21,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s22",
+      "vehicleId": "08-25-AA",
+      "definitionId": "li",
+      "estado": "parado",
+      "mecanico": "",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 22,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s23",
+      "vehicleId": "AH-31-BB",
+      "definitionId": "sp",
+      "estado": "parado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 23,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s24",
+      "vehicleId": "AH-31-BB",
+      "definitionId": "ad",
+      "estado": "parado",
+      "mecanico": "",
+      "agendamento": "filaDeEspera",
+      "data": {
+        "dia": 24,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    },
+    {
+      "id": "s25",
+      "vehicleId": "AH-32-44",
+      "definitionId": "sfo",
+      "estado": "parado",
+      "mecanico": "",
+      "agendamento": "programado",
+      "data": {
+        "dia": 25,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": ""
+    }
+  ]
+}
