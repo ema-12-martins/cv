@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=3 uid="uid://bw5fmtdx0t6km"]
+
+[ext_resource type="Script" uid="uid://d12wjbgu0hqk6" path="res://scripts/hud.gd" id="1_6fi6k"]
+[ext_resource type="Texture2D" uid="uid://dc8ujprm741jl" path="res://images/key.png" id="2_uo2fv"]
+[ext_resource type="Texture2D" uid="uid://dhe67qs68cit1" path="res://images/clock.png" id="3_047uy"]
+[ext_resource type="Script" uid="uid://dgie5ob15vnpw" path="res://scripts/run_time.gd" id="4_5pdws"]
+[ext_resource type="Texture2D" uid="uid://6uvkpf3lggjn" path="res://images/exam.png" id="5_uo2fv"]
+
+[node name="Hud" type="Node2D"]
+
+[node name="Hud" type="CanvasLayer" parent="."]
+script = ExtResource("1_6fi6k")
+
+[node name="Control" type="Control" parent="Hud"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.980977, 0.974935)
+size_flags_horizontal = 0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Hud/Control"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 18.0
+offset_right = 602.0
+offset_bottom = 78.0
+
+[node name="MarginContainer-Keys" type="MarginContainer" parent="Hud/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Hud/Control/MarginContainer-Keys"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Hud/Control/MarginContainer-Keys/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_uo2fv")
+expand_mode = 3
+
+[node name="keys" type="Label" parent="Hud/Control/MarginContainer-Keys/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+
+[node name="MarginContainer-Time" type="MarginContainer" parent="Hud/Control"]
+layout_mode = 0
+offset_left = 426.106
+offset_top = -2.05142
+offset_right = 503.106
+offset_bottom = 69.9486
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Hud/Control/MarginContainer-Time"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Hud/Control/MarginContainer-Time/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_047uy")
+expand_mode = 3
+
+[node name="current_time" type="Label" parent="Hud/Control/MarginContainer-Time/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "00:00"
+
+[node name="run_timer" type="Timer" parent="Hud/Control/MarginContainer-Time/HBoxContainer"]
+process_callback = 0
+script = ExtResource("4_5pdws")
+
+[node name="MarginContainer-Exam" type="MarginContainer" parent="Hud/Control"]
+layout_mode = 0
+offset_left = 242.615
+offset_top = -2.05142
+offset_right = 395.615
+offset_bottom = 69.9486
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Hud/Control/MarginContainer-Exam"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Hud/Control/MarginContainer-Exam/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("5_uo2fv")
+expand_mode = 3
+
+[node name="Exam" type="Label" parent="Hud/Control/MarginContainer-Exam/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+
+[connection signal="timeout" from="Hud/Control/MarginContainer-Time/HBoxContainer/run_timer" to="Hud/Control/MarginContainer-Time/HBoxContainer/run_timer" method="_on_timeout"]

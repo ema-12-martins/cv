@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=3 uid="uid://biddnldnktd0s"]
+
+[ext_resource type="Script" uid="uid://6fm1ruxlx2e7" path="res://scripts/augusto.gd" id="1_vlu5a"]
+[ext_resource type="Texture2D" uid="uid://b8nkuiefg35ma" path="res://images/student.png" id="2_563dn"]
+[ext_resource type="PackedScene" uid="uid://cb5ac33fsghhx" path="res://interactions/interacting_component.tscn" id="3_6d7db"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cn110"]
+atlas = ExtResource("2_563dn")
+region = Rect2(0, 0, 1585, 1518)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4len5"]
+atlas = ExtResource("2_563dn")
+region = Rect2(1518, 0, 1518, 1518)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_acuoc"]
+atlas = ExtResource("2_563dn")
+region = Rect2(3036, 0, 1518, 1518)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ye1r3"]
+atlas = ExtResource("2_563dn")
+region = Rect2(4554, 0, 1518, 1518)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qkg8w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cn110")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4len5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_acuoc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ye1r3")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1t88"]
+size = Vector2(176, 218)
+
+[node name="augusto" type="CharacterBody2D"]
+script = ExtResource("1_vlu5a")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-18.3802, 48.0625)
+scale = Vector2(0.213729, 0.234601)
+sprite_frames = SubResource("SpriteFrames_qkg8w")
+animation = &"run"
+autoplay = "run"
+frame_progress = 0.992496
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 85)
+shape = SubResource("RectangleShape2D_n1t88")
+
+[node name="InteractingComponent" parent="." instance=ExtResource("3_6d7db")]

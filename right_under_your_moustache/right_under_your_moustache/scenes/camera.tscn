@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://p7im8cqmkuvf"]
+
+[ext_resource type="Script" uid="uid://ca61o2ynariao" path="res://scripts/camera.gd" id="1_cvpoc"]
+[ext_resource type="Texture2D" uid="uid://ddrqa01yusoyq" path="res://images/camera.png" id="2_kod1s"]
+
+[node name="camera" type="Node2D"]
+script = ExtResource("1_cvpoc")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(-1, 0)
+polygon = PackedVector2Array(-839, 767, -396, 767, -69, 71)
+
+[node name="flip_camera" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.352941, 0.352941, 0.352941, 0.4)
+polygon = PackedVector2Array(-73, 74, -835, 766, -397, 764)
+
+[node name="Camera" type="Sprite2D" parent="."]
+position = Vector2(-90, 82)
+texture = ExtResource("2_kod1s")
+
+[connection signal="timeout" from="flip_camera" to="." method="_on_flip_camera_timeout"]

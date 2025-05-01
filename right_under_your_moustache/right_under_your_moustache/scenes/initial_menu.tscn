@@ -1,0 +1,197 @@
+[gd_scene load_steps=21 format=4 uid="uid://c564gm5e3d1k2"]
+
+[ext_resource type="Script" uid="uid://cdwpc1forftbi" path="res://scripts/initial_menu.gd" id="1_148c3"]
+[ext_resource type="Texture2D" uid="uid://bsgwmy6rm0sg4" path="res://images/background.png" id="2_oc6bb"]
+[ext_resource type="Texture2D" uid="uid://b45sp706gqgkn" path="res://images/outlines.png" id="3_xllue"]
+[ext_resource type="Texture2D" uid="uid://bbp7wrncv75rd" path="res://images/sprite_blooks.png" id="4_1es10"]
+[ext_resource type="Texture2D" uid="uid://ckmldm6jvgpa1" path="res://images/shadow_gradient.png" id="5_1fkyr"]
+[ext_resource type="Texture2D" uid="uid://37devn5cku08" path="res://images/menu_background.png" id="6_xllue"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1es10"]
+texture = ExtResource("6_xllue")
+modulate_color = Color(0.347817, 0.347817, 0.347817, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kqghp"]
+font_size = 50
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j5b7x"]
+texture = ExtResource("2_oc6bb")
+texture_region_size = Vector2i(45, 45)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e86c"]
+texture = ExtResource("3_xllue")
+texture_region_size = Vector2i(45, 45)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hcufk"]
+texture = ExtResource("4_1es10")
+texture_region_size = Vector2i(45, 45)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sgfvm"]
+texture = ExtResource("5_1fkyr")
+texture_region_size = Vector2i(45, 45)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lsd8w"]
+tile_size = Vector2i(45, 45)
+sources/3 = SubResource("TileSetAtlasSource_hcufk")
+sources/0 = SubResource("TileSetAtlasSource_j5b7x")
+sources/1 = SubResource("TileSetAtlasSource_0e86c")
+sources/4 = SubResource("TileSetAtlasSource_sgfvm")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_148c3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rek5e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xllue"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ku6a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oc6bb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7nlc8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_148c3"]
+bg_color = Color(0, 0, 0, 0.341176)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="initial_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_148c3")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -629.0
+offset_top = -162.0
+offset_right = 1291.0
+offset_bottom = 745.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.588108, 0.53412)
+theme_override_styles/panel = SubResource("StyleBoxTexture_1es10")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -338.5
+offset_top = 194.0
+offset_right = 358.5
+offset_bottom = 267.0
+grow_horizontal = 2
+text = "Right Under Your Moustache"
+label_settings = SubResource("LabelSettings_kqghp")
+horizontal_alignment = 1
+
+[node name="TileMap" type="Node2D" parent="."]
+
+[node name="Front" type="TileMapLayer" parent="TileMap"]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAAFAAQABAACAAAAAAAGAAQABAACAAAAAAAHAAQABAACAAAAAAAIAAQABAACAAAAAAAJAAQABAACAAAAAAAKAAQABAACAAAAAAALAAQABAACAAAAAAAMAAQABAACAAAAAAANAAQABAACAAAAAAAOAAQABAACAAAAAAAPAAQABAACAAAAAAAQAAQABAACAAAAAAARAAQABAACAAAAAAASAAQABAACAAAAAAATAAQABAACAAAAAAAUAAQABAACAAAAAAAFAAMABAACAAAAAAAGAAIABAACAAAAAAAHAAEABAACAAAAAAAIAAEABAACAAAAAAAJAAEABAACAAAAAAAKAAEABAACAAAAAAALAAEABAACAAAAAAAMAAEABAACAAAAAAANAAEABAACAAAAAAAOAAEABAACAAAAAAAPAAEABAACAAAAAAAQAAEABAACAAAAAAARAAEABAACAAAAAAASAAEABAACAAAAAAATAAIABAACAAAAAAAUAAMABAACAAAAAAAHAAIAAAAHAAEAAAAIAAIAAAACAAAAAAAJAAIAAAAHAAEAAAAKAAIAAAAHAAEAAAALAAIAAAACAAAAAAAMAAIAAAAHAAEAAAANAAIAAAAHAAEAAAAOAAIAAAACAAAAAAAPAAIAAAAHAAEAAAAQAAIAAAAHAAEAAAARAAIAAAACAAAAAAASAAIAAAAHAAEAAAASAAMAAAACAAAAAAARAAMAAAAHAAEAAAAQAAMAAAAHAAEAAAAPAAMAAAACAAAAAAAOAAMAAAAHAAEAAAANAAMAAAAHAAEAAAAMAAMAAAAHAAEAAAALAAMAAAAHAAEAAAAKAAMAAAACAAAAAAAJAAMAAAAHAAEAAAAIAAMAAAAHAAEAAAAHAAMAAAACAAAAAAAGAAMAAAAHAAEAAAATAAMAAAAHAAEAAAA=")
+tile_set = SubResource("TileSet_lsd8w")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -33.0
+offset_right = 23.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_top = NodePath("../QuitButton")
+theme_override_colors/font_hover_color = Color(1, 1, 0.298039, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 0.298039, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0.298039, 1)
+theme_override_constants/outline_size = 15
+theme_override_constants/align_to_largest_stylebox = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/focus = SubResource("StyleBoxEmpty_148c3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rek5e")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xllue")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8ku6a")
+text = "Start"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_bottom = NodePath("../StartButton")
+theme_override_colors/font_hover_color = Color(1, 1, 0.298039, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 0.298039, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0.298039, 1)
+theme_override_constants/outline_size = 15
+theme_override_constants/align_to_largest_stylebox = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/focus = SubResource("StyleBoxEmpty_oc6bb")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7nlc8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_148c3")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8ku6a")
+text = "Quit"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(584.765, 328.93)
+zoom = Vector2(0.985, 0.985)
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="focus_entered" from="VBoxContainer/StartButton" to="." method="_on_start_button_focus_entered"]
+[connection signal="focus_exited" from="VBoxContainer/StartButton" to="." method="_on_start_button_focus_exited"]
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="focus_entered" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_focus_entered"]
+[connection signal="focus_exited" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_focus_exited"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
