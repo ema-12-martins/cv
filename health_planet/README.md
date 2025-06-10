@@ -1,4 +1,4 @@
-# Health Planet – a sustainable alternative to Uber
+# Health Planet
 
 This project aims to implement a delivery company called **Health Planet**, which focuses on delivering orders as sustainably as possible. The company employs couriers who deliver packages using **bicycles, motorcycles, or cars**, each with their own **ranking**.
 
