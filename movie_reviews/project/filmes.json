@@ -1,0 +1,548 @@
+[
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "cast": ["Tim Robbins", "Morgan Freeman"],
+    "genres": ["Drama"]
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "cast": ["Marlon Brando", "Al Pacino"],
+    "genres": ["Crime", "Drama"]
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "cast": ["Christian Bale", "Heath Ledger"],
+    "genres": ["Action", "Crime", "Drama"]
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "cast": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
+    "genres": ["Crime", "Drama"]
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "cast": ["Tom Hanks", "Robin Wright"],
+    "genres": ["Drama", "Romance"]
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt"],
+    "genres": ["Action", "Sci-Fi", "Thriller"]
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "cast": ["Brad Pitt", "Edward Norton"],
+    "genres": ["Drama"]
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "cast": ["Keanu Reeves", "Laurence Fishburne"],
+    "genres": ["Action", "Sci-Fi"]
+  },
+  {
+    "title": "Goodfellas",
+    "year": 1990,
+    "cast": ["Robert De Niro", "Ray Liotta", "Joe Pesci"],
+    "genres": ["Biography", "Crime", "Drama"]
+  },
+  {
+    "title": "Se7en",
+    "year": 1995,
+    "cast": ["Morgan Freeman", "Brad Pitt"],
+    "genres": ["Crime", "Drama", "Mystery"]
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "cast": ["Jodie Foster", "Anthony Hopkins"],
+    "genres": ["Crime", "Drama", "Thriller"]
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "cast": ["Matthew McConaughey", "Anne Hathaway"],
+    "genres": ["Adventure", "Drama", "Sci-Fi"]
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "cast": ["Russell Crowe", "Joaquin Phoenix"],
+    "genres": ["Action", "Adventure", "Drama"]
+  },
+  {
+    "title": "The Green Mile",
+    "year": 1999,
+    "cast": ["Tom Hanks", "Michael Clarke Duncan"],
+    "genres": ["Crime", "Drama", "Fantasy"]
+  },
+  {
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "cast": ["Tom Hanks", "Matt Damon"],
+    "genres": ["Drama", "War"]
+  },
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "cast": ["Christian Bale", "Hugh Jackman"],
+    "genres": ["Drama", "Mystery", "Sci-Fi"]
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "cast": ["Miles Teller", "J.K. Simmons"],
+    "genres": ["Drama", "Music"]
+  },
+  {
+    "title": "The Departed",
+    "year": 2006,
+    "cast": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson"],
+    "genres": ["Crime", "Drama", "Thriller"]
+  },
+  {
+    "title": "The Wolf of Wall Street",
+    "year": 2013,
+    "cast": ["Leonardo DiCaprio", "Jonah Hill"],
+    "genres": ["Biography", "Comedy", "Crime"]
+  },
+  {
+    "title": "Django Unchained",
+    "year": 2012,
+    "cast": ["Jamie Foxx", "Christoph Waltz", "Leonardo DiCaprio"],
+    "genres": ["Drama", "Western"]
+  },
+  {
+    "title": "12 Angry Men",
+    "year": 1957,
+    "cast": ["Henry Fonda", "Lee J. Cobb"],
+    "genres": ["Crime", "Drama"]
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "cast": ["Liam Neeson", "Ralph Fiennes"],
+    "genres": ["Biography", "Drama", "History"]
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "cast": ["Matthew Broderick", "Jeremy Irons"],
+    "genres": ["Animation", "Adventure", "Drama"]
+  },
+  {
+    "title": "Toy Story",
+    "year": 1995,
+    "cast": ["Tom Hanks", "Tim Allen"],
+    "genres": ["Animation", "Adventure", "Comedy"]
+  },
+  {
+    "title": "Finding Nemo",
+    "year": 2003,
+    "cast": ["Albert Brooks", "Ellen DeGeneres"],
+    "genres": ["Animation", "Adventure", "Comedy"]
+  },
+  {
+    "title": "Up",
+    "year": 2009,
+    "cast": ["Edward Asner", "Jordan Nagai"],
+    "genres": ["Animation", "Adventure", "Comedy"]
+  },
+  {
+    "title": "Monsters, Inc.",
+    "year": 2001,
+    "cast": ["Billy Crystal", "John Goodman"],
+    "genres": ["Animation", "Adventure", "Comedy"]
+  },
+  {
+    "title": "Inside Out",
+    "year": 2015,
+    "cast": ["Amy Poehler", "Phyllis Smith"],
+    "genres": ["Animation", "Adventure", "Comedy"]
+  },
+  {
+    "title": "Coco",
+    "year": 2017,
+    "cast": ["Anthony Gonzalez", "Gael García Bernal"],
+    "genres": ["Animation", "Adventure", "Family"]
+  },
+  {
+    "title": "The Incredibles",
+    "year": 2004,
+    "cast": ["Craig T. Nelson", "Holly Hunter"],
+    "genres": ["Animation", "Action", "Adventure"]
+  },
+  {
+    "title": "Ratatouille",
+    "year": 2007,
+    "cast": ["Brad Garrett", "Lou Romano"],
+    "genres": ["Animation", "Comedy", "Family"]
+  },
+  {
+    "title": "WALL·E",
+    "year": 2008,
+    "cast": ["Ben Burtt", "Elissa Knight"],
+    "genres": ["Animation", "Adventure", "Family"]
+  },
+  {
+    "title": "The Social Network",
+    "year": 2010,
+    "cast": ["Jesse Eisenberg", "Andrew Garfield"],
+    "genres": ["Biography", "Drama"]
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "cast": ["Joaquin Phoenix", "Robert De Niro"],
+    "genres": ["Crime", "Drama", "Thriller"]
+  },
+  {
+    "title": "Parasite",
+    "year": 2019,
+    "cast": ["Song Kang-ho", "Lee Sun-kyun"],
+    "genres": ["Comedy", "Drama", "Thriller"]
+  },
+  {
+    "title": "La La Land",
+    "year": 2016,
+    "cast": ["Ryan Gosling", "Emma Stone"],
+    "genres": ["Comedy", "Drama", "Music"]
+  },
+  {
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "cast": ["Robert Downey Jr.", "Chris Evans"],
+    "genres": ["Action", "Adventure", "Drama"]
+  },
+  {
+    "title": "Black Panther",
+    "year": 2018,
+    "cast": ["Chadwick Boseman", "Michael B. Jordan"],
+    "genres": ["Action", "Adventure", "Sci-Fi"]
+  },
+  {
+    "title": "Titanic",
+    "year": 1997,
+    "cast": ["Leonardo DiCaprio", "Kate Winslet"],
+    "genres": ["Drama", "Romance"]
+  },
+  {
+    "title": "The Revenant",
+    "year": 2015,
+    "cast": ["Leonardo DiCaprio", "Tom Hardy"],
+    "genres": ["Action", "Adventure", "Drama"]
+  },
+  {
+    "title": "A Beautiful Mind",
+    "year": 2001,
+    "cast": ["Russell Crowe", "Ed Harris"],
+    "genres": ["Biography", "Drama"]
+  },
+  {
+    "title": "The Truman Show",
+    "year": 1998,
+    "cast": ["Jim Carrey", "Laura Linney"],
+    "genres": ["Comedy", "Drama", "Sci-Fi"]
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "cast": ["Ralph Fiennes", "Tony Revolori"],
+    "genres": ["Adventure", "Comedy", "Crime"]
+  },
+  {
+    "title": "The Pianist",
+    "year": 2002,
+    "cast": ["Adrien Brody", "Thomas Kretschmann"],
+    "genres": ["Biography", "Drama", "Music"]
+  },
+  {
+    "title": "The Imitation Game",
+    "year": 2014,
+    "cast": ["Benedict Cumberbatch", "Keira Knightley"],
+    "genres": ["Biography", "Drama", "Thriller"]
+  },
+  {
+    "title": "Shutter Island",
+    "year": 2010,
+    "cast": ["Leonardo DiCaprio", "Mark Ruffalo"],
+    "genres": ["Mystery", "Thriller"]
+  },
+  {
+    "title": "The King's Speech",
+    "year": 2010,
+    "cast": ["Colin Firth", "Geoffrey Rush"],
+    "genres": ["Biography", "Drama", "History"]
+  },
+  {
+    "title": "Her",
+    "year": 2013,
+    "cast": ["Joaquin Phoenix", "Scarlett Johansson"],
+    "genres": ["Drama", "Romance", "Sci-Fi"]
+  },
+  {
+    "title": "Casablanca",
+    "year": 1942,
+    "cast": ["Humphrey Bogart", "Ingrid Bergman"],
+    "genres": ["Drama", "Romance", "War"]
+  },
+  {
+    "title": "Gone with the Wind",
+    "year": 1939,
+    "cast": ["Clark Gable", "Vivien Leigh"],
+    "genres": ["Drama", "History", "Romance"]
+  },
+  {
+    "title": "Citizen Kane",
+    "year": 1941,
+    "cast": ["Orson Welles", "Joseph Cotten"],
+    "genres": ["Drama", "Mystery"]
+  },
+  {
+    "title": "Psycho",
+    "year": 1960,
+    "cast": ["Anthony Perkins", "Janet Leigh"],
+    "genres": ["Horror", "Mystery", "Thriller"]
+  },
+  {
+    "title": "2001: A Space Odyssey",
+    "year": 1968,
+    "cast": ["Keir Dullea", "Gary Lockwood"],
+    "genres": ["Adventure", "Sci-Fi"]
+  },
+  {
+    "title": "Star Wars: Episode IV - A New Hope",
+    "year": 1977,
+    "cast": ["Mark Hamill", "Harrison Ford"],
+    "genres": ["Action", "Adventure", "Fantasy"]
+  },
+  {
+    "title": "Back to the Future",
+    "year": 1985,
+    "cast": ["Michael J. Fox", "Christopher Lloyd"],
+    "genres": ["Adventure", "Comedy", "Sci-Fi"]
+  },
+  {
+    "title": "Indiana Jones and the Raiders of the Lost Ark",
+    "year": 1981,
+    "cast": ["Harrison Ford", "Karen Allen"],
+    "genres": ["Action", "Adventure"]
+  },
+  {
+    "title": "E.T. the Extra-Terrestrial",
+    "year": 1982,
+    "cast": ["Henry Thomas", "Drew Barrymore"],
+    "genres": ["Adventure", "Family", "Sci-Fi"]
+  },
+  {
+    "title": "Jurassic Park",
+    "year": 1993,
+    "cast": ["Sam Neill", "Laura Dern"],
+    "genres": ["Action", "Adventure", "Sci-Fi"]
+  },
+  {
+    "title": "The Sixth Sense",
+    "year": 1999,
+    "cast": ["Bruce Willis", "Haley Joel Osment"],
+    "genres": ["Drama", "Mystery", "Thriller"]
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "cast": ["Elijah Wood", "Ian McKellen"],
+    "genres": ["Adventure", "Fantasy"]
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "cast": ["Elijah Wood", "Viggo Mortensen"],
+    "genres": ["Adventure", "Fantasy"]
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "year": 2001,
+    "cast": ["Daniel Radcliffe", "Emma Watson"],
+    "genres": ["Adventure", "Family", "Fantasy"]
+  },
+  {
+    "title": "The Avengers",
+    "year": 2012,
+    "cast": ["Robert Downey Jr.", "Chris Evans"],
+    "genres": ["Action", "Adventure", "Sci-Fi"]
+  },
+  {
+    "title": "Guardians of the Galaxy",
+    "year": 2014,
+    "cast": ["Chris Pratt", "Zoe Saldana"],
+    "genres": ["Action", "Adventure", "Comedy"]
+  },
+  {
+    "title": "Deadpool",
+    "year": 2016,
+    "cast": ["Ryan Reynolds", "Morena Baccarin"],
+    "genres": ["Action", "Adventure", "Comedy"]
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "cast": ["Tom Hardy", "Charlize Theron"],
+    "genres": ["Action", "Adventure", "Sci-Fi"]
+  },
+  {
+    "title": "The Shining",
+    "year": 1980,
+    "cast": ["Jack Nicholson", "Shelley Duvall"],
+    "genres": ["Drama", "Horror"]
+  },
+  {
+    "title": "Alien",
+    "year": 1979,
+    "cast": ["Sigourney Weaver", "Tom Skerritt"],
+    "genres": ["Horror", "Sci-Fi"]
+  },
+  {
+    "title": "Blade Runner",
+    "year": 1982,
+    "cast": ["Harrison Ford", "Rutger Hauer"],
+    "genres": ["Sci-Fi", "Thriller"]
+  },
+  {
+    "title": "The Big Lebowski",
+    "year": 1998,
+    "cast": ["Jeff Bridges", "John Goodman"],
+    "genres": ["Comedy", "Crime"]
+  },
+  {
+    "title": "No Country for Old Men",
+    "year": 2007,
+    "cast": ["Javier Bardem", "Josh Brolin"],
+    "genres": ["Crime", "Drama", "Thriller"]
+  },
+  {
+    "title": "There Will Be Blood",
+    "year": 2007,
+    "cast": ["Daniel Day-Lewis", "Paul Dano"],
+    "genres": ["Drama"]
+  },
+  {
+    "title": "Birdman",
+    "year": 2014,
+    "cast": ["Michael Keaton", "Edward Norton"],
+    "genres": ["Comedy", "Drama"]
+  },
+  {
+    "title": "The Shape of Water",
+    "year": 2017,
+    "cast": ["Sally Hawkins", "Michael Shannon"],
+    "genres": ["Adventure", "Drama", "Fantasy"]
+  },
+  {
+    "title": "Moonlight",
+    "year": 2016,
+    "cast": ["Mahershala Ali", "Trevante Rhodes"],
+    "genres": ["Drama"]
+  },
+  {
+    "title": "Get Out",
+    "year": 2017,
+    "cast": ["Daniel Kaluuya", "Allison Williams"],
+    "genres": ["Horror", "Mystery", "Thriller"]
+  },
+  {
+    "title": "The Terminator",
+    "year": 1984,
+    "cast": ["Arnold Schwarzenegger", "Linda Hamilton"],
+    "genres": ["Action", "Sci-Fi"]
+  },
+  {
+    "title": "Terminator 2: Judgment Day",
+    "year": 1991,
+    "cast": ["Arnold Schwarzenegger", "Linda Hamilton"],
+    "genres": ["Action", "Sci-Fi"]
+  },
+  {
+    "title": "Die Hard",
+    "year": 1988,
+    "cast": ["Bruce Willis", "Alan Rickman"],
+    "genres": ["Action", "Thriller"]
+  },
+  {
+    "title": "Mission: Impossible",
+    "year": 1996,
+    "cast": ["Tom Cruise", "Jon Voight"],
+    "genres": ["Action", "Adventure", "Thriller"]
+  },
+  {
+    "title": "Top Gun",
+    "year": 1986,
+    "cast": ["Tom Cruise", "Kelly McGillis"],
+    "genres": ["Action", "Drama"]
+  },
+  {
+    "title": "Rocky",
+    "year": 1976,
+    "cast": ["Sylvester Stallone", "Talia Shire"],
+    "genres": ["Drama", "Sport"]
+  },
+  {
+    "title": "Raging Bull",
+    "year": 1980,
+    "cast": ["Robert De Niro", "Joe Pesci"],
+    "genres": ["Biography", "Drama", "Sport"]
+  },
+  {
+    "title": "The Breakfast Club",
+    "year": 1985,
+    "cast": ["Emilio Estevez", "Judd Nelson"],
+    "genres": ["Comedy", "Drama"]
+  },
+  {
+    "title": "Ferris Bueller's Day Off",
+    "year": 1986,
+    "cast": ["Matthew Broderick", "Alan Ruck"],
+    "genres": ["Comedy"]
+  },
+  {
+    "title": "Groundhog Day",
+    "year": 1993,
+    "cast": ["Bill Murray", "Andie MacDowell"],
+    "genres": ["Comedy", "Fantasy", "Romance"]
+  },
+  {
+    "title": "The Princess Bride",
+    "year": 1987,
+    "cast": ["Cary Elwes", "Robin Wright"],
+    "genres": ["Adventure", "Family", "Fantasy"]
+  },
+  {
+    "title": "Amélie",
+    "year": 2001,
+    "cast": ["Audrey Tautou", "Mathieu Kassovitz"],
+    "genres": ["Comedy", "Romance"]
+  },
+  {
+    "title": "Life Is Beautiful",
+    "year": 1997,
+    "cast": ["Roberto Benigni", "Nicoletta Braschi"],
+    "genres": ["Comedy", "Drama", "Romance"]
+  },
+  {
+    "title": "Cinema Paradiso",
+    "year": 1988,
+    "cast": ["Philippe Noiret", "Salvatore Cascio"],
+    "genres": ["Drama", "Romance"]
+  },
+  {
+    "title": "Oldboy",
+    "year": 2003,
+    "cast": ["Choi Min-sik", "Yoo Ji-tae"],
+    "genres": ["Action", "Drama", "Mystery"]
+  }
+]
