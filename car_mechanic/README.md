@@ -7,9 +7,6 @@
 - Manuel Serrano (a100825)
 - Marta Gonçalves (a100593)
 
-## Nota
-.../20
-
 ## Project setup
 ```
 npm install
