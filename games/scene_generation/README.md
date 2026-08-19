@@ -1,10 +1,4 @@
-# SGI 2024/2025 - TP2
-
-## Group T07G03
-
-| Name             | Number    | E-Mail             |
-| ---------------- | --------- | ------------------ |
-| Ema Martins      | 202402794 | <up202402794@up.pt>  |
+# Scene Generation - Ema Martins
 
 ## Project Information
 
