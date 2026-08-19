@@ -1,4 +1,4 @@
-# Hot Air Balloon - Ema Martins
+# Hot Air Balloon Races - Ema Martins
 
 ## Project Information
 
