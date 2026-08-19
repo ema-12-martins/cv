@@ -1,0 +1,4844 @@
+{
+    "yaf": {
+        "globals": {
+            "background": {
+                "r": 0.53,
+                "g": 0.81,
+                "b": 0.92
+            },
+            "ambient": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+            },
+            "fog": {
+                "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                },
+                "near": 7000,
+                "far": 8000
+            },
+            "skybox": {
+                "size": {
+                    "x": 600,
+                    "y": 600,
+                    "z": 600
+                },
+                "center": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "emissive": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                },
+                "intensity": 2,
+                "front": "/scenes/textures/sky2.png",
+                "back": "/scenes/textures/sky2.png",
+                "up": "/scenes/textures/sky2.png",
+                "down": "/scenes/textures/sky2.png",
+                "left": "/scenes/textures/sky2.png",
+                "right": "/scenes/textures/sky2.png"
+            }
+        },
+        "textures": {
+            "basketTex": {
+                "filepath": "scenes/textures/basket.jpg",
+                "isVideo": false
+            },
+            "basketTex2": {
+                "filepath": "scenes/textures/basket2.png",
+                "isVideo": false
+            },
+            "balloonTex": {
+                "filepath": "scenes/textures/balloon.avif",
+                "isVideo": false
+            },
+            "balloon2Tex": {
+                "filepath": "scenes/textures/balloon2.webp",
+                "isVideo": false
+            },
+            "arrowTex": {
+                "filepath": "scenes/textures/arrow.png",
+                "isVideo": false
+            },
+            "grassTex": {
+                "filepath": "scenes/textures/grass.jpg",
+                "isVideo": false
+            },
+            "candyCityTex": {
+                "filepath": "scenes/textures/houses.png",
+                "isVideo": false
+            },
+            "cookieTex": {
+                "filepath": "scenes/textures/cookie2.png",
+                "isVideo": false
+            },
+            "woodTex": {
+                "filepath": "scenes/textures/wood.png",
+                "isVideo": false
+            },
+            "finishTex": {
+                "filepath": "scenes/textures/finish.png",
+                "isVideo": false
+            }
+
+        },
+        "materials": {
+            "woodMat": {
+                "color": {
+                    "r": 0.40,
+                    "g": 0.33,
+                    "b": 0.30
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                },
+                "shininess": 10,
+                "textureref": "woodTex",
+                "texlength_s": 1,
+                "texlength_t": 1.2,
+                "twosided": true
+                
+            },
+            "ropeMat": {
+                "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "ropeTex",
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "ropeMat2": {
+                "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "ropeTex",
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "balloonMat": {
+                "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "balloonTex",
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "balloonMat2": {
+                "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "balloon2Tex",
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "basketMat": {
+                "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "basketTex",
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "basketMat2": {
+                "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "basketTex2",
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "rodeMat": {
+                "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "ropeTex",
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "arrowMat": {
+                "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "arrowTex",
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "grassMat": {
+                "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "grassTex",
+                "texlength_s": 10,
+                "texlength_t": 10,
+                "height_map_path":"scenes/textures/relief2.jpg",
+                "twosided": true
+            },
+            "finishMat": {
+                "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "finishTex",
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "candyCityMat": {
+                "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "candyCityTex",
+                "normal_map_path":"scenes/textures/house_gray_scale.png",
+                "texlength_s": 2,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "cookieMat": {
+                "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "specular": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 0
+                },
+                "shininess": 10,
+                "textureref": "cookieTex",
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            }
+        },
+        "cameras": {
+            "initial": "cam1",
+            "cam1": {
+                "type": "perspective",
+                "angle": 60,
+                "near": 0.1,
+                "far": 2000,
+                "location": {
+                    "x": 0,
+                    "y": 35,
+                    "z": 170
+                },
+                "target": {
+                    "x": 0,
+                    "y": 20,
+                    "z": 0
+                }
+            },
+            "cam2": {
+                "type": "perspective",
+                "angle": 60,
+                "near": 0.1,
+                "far": 2000,
+                "location": {
+                    "x": 0,
+                    "y": 290,
+                    "z": -10
+                },
+                "target": {
+                    "x": 0,
+                    "y": 20,
+                    "z": -10
+                }
+            },
+            "cam3": {
+                "type": "perspective",
+                "angle": 60,
+                "near": 0.1,
+                "far": 2000,
+                "location": {
+                    "x": 0,
+                    "y": 35,
+                    "z": 170
+                },
+                "target": {
+                    "x": 0,
+                    "y": 20,
+                    "z": 0
+                }
+            }
+        },
+        "graph": {
+            "scene": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "rider1",
+                        "rider2",
+                        "items_inicial_menu",
+                        "items_2_menu",
+                        "items_3_menu",
+                        "items_4_menu",
+                        "items_5_menu",
+                        "road1",
+                        "grass",
+                        "houses",
+                        "verificationPlanes",
+                        "finishLine"
+                    ]
+                }
+            },
+            "finishLine": {
+                "type": "node",
+                "children": {
+                    "nodesList":["Lateral1Finish","Lateral2Finish","FinishPlane"]
+                }
+            },
+            "FinishPlane": {
+                "type": "node",
+                "materialref": {
+                        "materialId": "finishMat"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": { "x": 0, "y": 42.5, "z":102.5 }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": { "x": 0, "y": 270, "z":0 }
+                    }
+
+                ],
+                "children": {
+                    "FinishPlane_Primitive": {
+                        "type": "rectangle",
+                        "visibility": false,
+                        "xy1": {
+                            "x": -33,
+                            "y": -5
+                        },
+                        "xy2": {
+                            "x": 33,
+                            "y": 5
+                        }
+                    }
+                }
+            },
+            "Lateral1Finish": {
+                "type": "node",
+                "materialref": {
+                        "materialId": "woodMat"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 70
+                        }
+                    }
+                ],
+                "children": {
+                    "Lateral1Finish_Primitive": {
+                        "visibility": false,
+                        "type": "cylinder",
+                        "base": 1.5,
+                        "top": 1.5,
+                        "height": 100,
+                        "slices": 10,
+                        "stacks": 10,
+                        "capsclose": false
+                    }
+                }
+            },
+            "Lateral2Finish": {
+                "type": "node",
+                "materialref": {
+                        "materialId": "woodMat"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 135
+                        }
+                    }
+                ],
+                "children": {
+                    "Lateral2Finish_Primitive": {
+                        "visibility": false,
+                        "type": "cylinder",
+                        "base": 1.5,
+                        "top": 1.5,
+                        "height": 100,
+                        "slices": 10,
+                        "stacks": 10,
+                        "capsclose": false
+                    }
+                }
+            },
+            "items_5_menu": {
+                "type": "node",
+                "children": {
+                    "nodesList":["win","lose","time","restart","home"]
+                }
+            },
+            "home": {
+                "type": "node",
+                "children": {
+                    "nodesList":["home1","home2","home3","home4"]
+                }
+            },
+            "home1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": -15,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "home1_Primitive":{
+                        "type": "letter",
+                        "letter": "h",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "home2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -10,
+                            "y": -15,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "home2_Primitive":{
+                        "type": "letter",
+                        "letter": "o",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "home3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -15,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "home3_Primitive":{
+                        "type": "letter",
+                        "letter": "m",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "home4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 10,
+                            "y": -15,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "home4_Primitive":{
+                        "type": "letter",
+                        "letter": "e",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "restart": {
+                "type": "node",
+                "children": {
+                    "nodesList":["restart1","restart2","restart3","restart4","restart5","restart6","restart7"]
+                }
+            },
+            "restart1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -35,
+                            "y": 10,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "restart1_Primitive":{
+                        "type": "letter",
+                        "letter": "r",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "restart2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -25,
+                            "y": 10,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "restart2_Primitive":{
+                        "type": "letter",
+                        "letter": "e",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "restart3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -15,
+                            "y": 10,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "restart3_Primitive":{
+                        "type": "letter",
+                        "letter": "s",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "restart4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5,
+                            "y": 10,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "restart4_Primitive":{
+                        "type": "letter",
+                        "letter": "t",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "restart5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 5,
+                            "y": 10,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "restart5_Primitive":{
+                        "type": "letter",
+                        "letter": "a",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "restart6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 15,
+                            "y": 10,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "restart6_Primitive":{
+                        "type": "letter",
+                        "letter": "r",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "restart7": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 25,
+                            "y": 10,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "restart7_Primitive":{
+                        "type": "letter",
+                        "letter": "t",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "lose": {
+                "type": "node",
+                "children": {
+                    "nodesList":["lose1","lose2","lose3","lose4","lose5","lose6","lose7","lose8"]
+                }
+            },
+            "lose1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -40,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "lose1_Primitive":{
+                        "type": "letter",
+                        "letter": "y",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "lose2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -30,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "lose2_Primitive":{
+                        "type": "letter",
+                        "letter": "o",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "lose3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "lose3_Primitive":{
+                        "type": "letter",
+                        "letter": "u",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "lose4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -10,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "lose4_Primitive":{
+                        "type": "letter",
+                        "letter": "-",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "lose5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "lose5_Primitive":{
+                        "type": "letter",
+                        "letter": "l",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "lose6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 10,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "lose6_Primitive":{
+                        "type": "letter",
+                        "letter": "o",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "lose7": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 20,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "lose7_Primitive":{
+                        "type": "letter",
+                        "letter": "s",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "lose8": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 30,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "lose8_Primitive":{
+                        "type": "letter",
+                        "letter": "t",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "win": {
+                "type": "node",
+                "children": {
+                    "nodesList":["win1","win2","win3","win4","win5","win6","win7"]
+                }
+            },
+            "win1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -35,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "win1_Primitive":{
+                        "type": "letter",
+                        "letter": "y",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "win2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -25,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "win2_Primitive":{
+                        "type": "letter",
+                        "letter": "o",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "win3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -15,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "win3_Primitive":{
+                        "type": "letter",
+                        "letter": "u",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "win4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "win4_Primitive":{
+                        "type": "letter",
+                        "letter": "-",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "win5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 5,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "win5_Primitive":{
+                        "type": "letter",
+                        "letter": "w",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "win6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 15,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "win6_Primitive":{
+                        "type": "letter",
+                        "letter": "o",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "win7": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 25,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "win7_Primitive":{
+                        "type": "letter",
+                        "letter": "n",
+                        "visibility":false,
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "items_4_menu": {
+                "type": "node",
+                "children": {
+                    "nodesList":["pause1","pause2","pause3","pause4","pause5","pause6","pause7","pause8","pause9","pause10","pause11","pause12","pause13","pause14","pause15"]
+                }
+            },
+            "pause1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause1_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "p",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -10,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause2_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "a",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause3_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "u",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 10,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause4_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "s",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 20,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause5_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause6_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "p",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause7": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -10,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause7_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "a",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause8": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause8_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "u",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause9": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 10,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause9_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "s",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause10": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 20,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause10_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause11": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause11_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "p",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause12": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -10,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause12_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "a",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause13": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause13_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "u",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause14": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 10,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause14_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "s",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "pause15": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 20,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "pause15_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "verificationPlanes": {
+                "type": "node",
+                "children": {
+                    "nodesList":["verificationPlanes1","verificationPlanes2","verificationPlanes3","verificationPlanes4"]
+                }
+            },
+            "verificationPlanes1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": { "x": 0, "y": 10, "z":0 }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": { "x": 80, "y": -3.1, "z":0 }
+                    }
+                ],
+                "children": {
+                    "verificationPlanes1_Primitive": {
+                        "type": "rectangle",
+                        "visibility": false,
+                        "xy1": {
+                            "x": -45,
+                            "y": -25
+                        },
+                        "xy2": {
+                            "x": 45,
+                            "y": 25
+                        }
+                    }
+                }
+            },
+            "verificationPlanes2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": { "x": 0, "y": 90, "z":0 }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": { "x": 0, "y": -3.1, "z":-110 }
+                    }
+                ],
+                "children": {
+                    "verificationPlanes2_Primitive": {
+                        "type": "rectangle",
+                        "visibility": false,
+                        "xy1": {
+                            "x": -45,
+                            "y": -25
+                        },
+                        "xy2": {
+                            "x": 45,
+                            "y": 25
+                        }
+                    }
+                }
+            },
+            "verificationPlanes3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": { "x": -130, "y": -3.1, "z":0 }
+                    }
+                ],
+                "children": {
+                    "verificationPlanes3_Primitive": {
+                        "type": "rectangle",
+                        "visibility": false,
+                        "xy1": {
+                            "x": -45,
+                            "y": -25
+                        },
+                        "xy2": {
+                            "x": 45,
+                            "y": 25
+                        }
+                    }
+                }
+            },
+            "verificationPlanes4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": { "x": 0, "y": 90, "z":0 }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": { "x": 0, "y": -3.1, "z":100 }
+                    }
+                ],
+                "children": {
+                    "verificationPlanes4_Primitive": {
+                        "type": "rectangle",
+                        "visibility": false,
+                        "xy1": {
+                            "x": -45,
+                            "y": -25
+                        },
+                        "xy2": {
+                            "x": 45,
+                            "y": 25
+                        }
+                    }
+                }
+            },
+            "houses": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "house1",
+                        "house2",
+                        "house3",
+                        "house4"
+
+                    ]
+                }
+            },
+            "house1": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "candyCityMat"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": { "x": 0, "y": 0, "z":-299.9 }
+                    }
+                ],
+                "children": {
+                    "house1_Primitive": {
+                        "type": "rectangle",
+                        "visibility": false,
+                        "xy1": {
+                            "x": -300,
+                            "y": -31.25
+                        },
+                        "xy2": {
+                            "x": 300,
+                            "y": 31.25
+                        }
+                    }
+                }
+            },
+            "house2": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "candyCityMat"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": { "x": 0, "y": 0, "z":299.9 }
+                    }
+                ],
+                "children": {
+                    "house2_Primitive": {
+                        "type": "rectangle",
+                        "visibility": false,
+                        "xy1": {
+                            "x": -300,
+                            "y": -31.25
+                        },
+                        "xy2": {
+                            "x": 300,
+                            "y": 31.25
+                        }
+                    }
+                }
+            },
+            "house3": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "candyCityMat"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": { "x": 299.9, "y": 0, "z":0 }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": { "x": 0, "y": 90, "z":0 }
+                    }
+                ],
+                "children": {
+                    "house3_Primitive": {
+                        "type": "rectangle",
+                        "visibility": false,
+                        "xy1": {
+                            "x": -300,
+                            "y": -31.25
+                        },
+                        "xy2": {
+                            "x": 300,
+                            "y": 31.25
+                        }
+                    }
+                }
+            },
+            "house4": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "candyCityMat"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": { "x": -299.9, "y": 0, "z":0 }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": { "x": 0, "y": 90, "z":0 }
+                    }
+                ],
+                "children": {
+                    "house4_Primitive": {
+                        "type": "rectangle",
+                        "visibility": false,
+                        "xy1": {
+                            "x": -300,
+                            "y": -31.25
+                        },
+                        "xy2": {
+                            "x": 300,
+                            "y": 31.25
+                        }
+                    }
+                }
+            },
+            "grass": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "grassMat"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": { "x": 90, "y": 0, "z":0 }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": { "x": 0, "y": -23.1, "z":0 }
+                    }
+                ],
+                "children": {
+                    "grass_Primitive": {
+                        "type": "rectangle",
+                        "visibility": false,
+                        "parts_x":400,
+                        "parts_y":400,
+                        "xy1": {
+                            "x": -350,
+                            "y": -350
+                        },
+                        "xy2": {
+                            "x": 300,
+                            "y": 300
+                        }
+                    }
+                }
+            },
+            "road1":{
+                "type": "node",
+                "materialref": {
+                    "materialId": "rodeMat"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": { "x": 0, "y": 270, "z":180 }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": { "x": -90, "y": -30, "z":60 }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": { "x": 3.5, "y": 3.5, "z":3.5 }
+                    }
+                ],
+                "children": {
+                    "road1Primitive": {
+                        "type": "road",
+                        "width": 15,
+                        "visibility": false,
+                        "segments": 400,
+                        "controlpoints": [
+                            { "x": 0, "y": 0.5, "z": 0 },
+                            { "x": 40, "y": 0.5, "z": 0 },
+                            { "x": 40, "y": 0.5, "z": -60 },
+                            { "x": 20, "y": 0.5, "z": -30 },
+                            { "x": 0, "y": 0.5, "z": -60 }
+                        ]
+
+                    }
+                }
+            },
+            "items_2_menu": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "name1",
+                        "name2",
+                        "name3",
+                        "name4",
+                        "name5",
+                        "name6",
+                        "name7",
+                        "name8",
+                        "name9",
+                        "name10",
+                        "name11",
+                        "name12",
+                        "fullName1",
+                        "fullName2",
+                        "fullNam3",
+                        "fullName4",
+                        "fullName5",
+                        "fullName6",
+                        "fullName7",
+                        "fullName8",
+                        "fullName9",
+                        "fullName10",
+                        "fullName11",
+                        "fullName_plane"
+                    ]
+                }
+            },
+            "fullName_plane": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "cookieMat"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 20,
+                            "z": -2
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName_plane_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        "xy1": {
+                            "x": -100,
+                            "y": -80
+                        },
+                        "xy2": {
+                            "x": 100,
+                            "y": 80
+                        }
+                    }
+                }
+            },
+            "fullName1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -50,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName1_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "fullName2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -40,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName2_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "fullName3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -30,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName3_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "fullName4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName4_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "fullName5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -10,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName5_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "fullName6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName6_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "fullName7": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 10,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName7_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "fullName8": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 20,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName8_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "fullName9": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 30,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName9_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "fullName10": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 40,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName10_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "fullName11": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 50,
+                            "y": 20,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "fullName11_Primitive":{
+                        "type": "rectangle",
+                        "visibility":false,
+                        "xy1": { "x": -7, "y": -7 },
+                        "xy2": { "x": 7, "y": 7 }
+                    }
+                }
+            },
+            "name1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -60,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name1_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "c",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -50,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name2_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "h",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -40,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name3_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "o",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -30,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name4_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "o",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name5_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "s",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -10,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name6_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name7": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name7_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "-",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name8": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 10,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name8_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "a",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name9": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 20,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name9_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "-",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name10": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 30,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name10_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "n",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name11": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 40,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name11_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "a",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name12": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 50,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name12_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "m",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "name13": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 60,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "name1_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "items_3_menu": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "side1",
+                        "side2",
+                        "side3",
+                        "side4",
+                        "side5",
+                        "side6",
+                        "side7",
+                        "side8",
+                        "side9",
+                        "side10",
+                        "side11",
+                        "side12",
+                        "side13",
+                        "side14",
+                        "side15",
+                        "side16",
+                        "side17",
+                        "side18",
+                        "side19",
+                        "side20",
+                        "side21",
+                        "side22",
+                        "arrow1",
+                        "arrow2",
+                        "start1",
+                        "start2",
+                        "start3",
+                        "start4",
+                        "start5"
+                    ]
+                }
+            },
+            "side1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -100,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side1_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "c",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -90,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side2_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "l",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -80,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side3_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "i",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -70,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side4_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "c",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -60,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side5_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "k",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -50,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side6_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "-",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side7": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -40,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side7_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "t",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side8": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -30,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side8_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "o",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side9": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side9_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "-",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side10": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -10,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side10_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "c",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side11": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side11_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "h",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side12": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 10,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side12_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "o",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side13": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 20,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side13_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "o",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side14": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 30,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side14_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "s",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side15": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 40,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side15_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side16": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 50,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side16_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "-",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side17": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 60,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side17_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "a",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side18": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 70,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side18_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "-",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side19": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 80,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side19_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "s",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side20": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 90,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side20_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "i",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side21": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 100,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side21_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "d",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "side22": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 110,
+                            "y": -50,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "side22_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "arrow1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -6.5,
+                            "y": -109,
+                            "z": 150
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.15,
+                            "y": 0.15,
+                            "z": 0.15
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x":0,
+                            "y": 180,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "arrow1_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "->",
+                        "xy1": { "x": -10, "y": -10 },
+                        "xy2": { "x": 10, "y": 10 }
+                    }
+                }
+            },
+            "arrow2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 6.5,
+                            "y": -109,
+                            "z": 150
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.15,
+                            "y": 0.15,
+                            "z": 0.15
+                        }
+                    }
+                ],
+                "children": {
+                    "arrow2_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "<-",
+                        "xy1": { "x": -10, "y": -10 },
+                        "xy2": { "x": 10, "y": 10 }
+                    }
+                }
+            },
+            "start1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -3,
+                            "y": -109,
+                            "z": 150
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.15,
+                            "y": 0.15,
+                            "z": 0.15
+                        }
+                    }
+                ],
+                "children": {
+                    "start1_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "s",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "start2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -1.5,
+                            "y": -109,
+                            "z": 150
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.15,
+                            "y": 0.15,
+                            "z": 0.15
+                        }
+                    }
+                ],
+                "children": {
+                    "start2_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "t",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "start3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -109,
+                            "z": 150
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.15,
+                            "y": 0.15,
+                            "z": 0.15
+                        }
+                    }
+                ],
+                "children": {
+                    "start3_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "a",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "start4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 1.50,
+                            "y": -109,
+                            "z": 150
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.15,
+                            "y": 0.15,
+                            "z": 0.15
+                        }
+                    }
+                ],
+                "children": {
+                    "start4_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "r",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "start5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 3,
+                            "y": -109,
+                            "z": 150
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.15,
+                            "y": 0.15,
+                            "z": 0.15
+                        }
+                    }
+                ],
+                "children": {
+                    "start5_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "t",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "items_inicial_menu": {
+                "type": "node",
+                "children": {
+                    "nodesList": [
+                        "choose1",
+                        "choose2",
+                        "choose3",
+                        "choose4",
+                        "choose5",
+                        "choose6",
+                        "choose7",
+                        "choose8",
+                        "choose9",
+                        "choose10",
+                        "choose11",
+                        "choose12",
+                        "choose13",
+                        "choose14",
+                        "choose15",
+                        "choose17",
+                        "choose18",
+                        "choose19",
+                        "choose20",
+                        "choose21",
+                        "choose22",
+                        "choose23",
+                        "choose24",
+                        "choose25",
+                        "choose26",
+                        "choose27",
+                        "choose28",
+                        "select1",
+                        "select2",
+                        "select3",
+                        "select4",
+                        "select5",
+                        "select6"
+                    ]
+                }
+            },
+            "select1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -30,
+                            "y": -45,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "select1_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "s",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "select2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": -45,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "select2_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "select3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -10,
+                            "y": -45,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "select3_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "l",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "select4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -45,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "select4_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "select5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 10,
+                            "y": -45,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "select5_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "c",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "select6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 20,
+                            "y": -45,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "select6_Primitive":{
+                        "type": "letter",
+                        "visibility":false,
+                        "letter": "t",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -125,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose1_Primitive":{
+                        "type": "letter",
+                        "letter": "c",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -115,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose2_Primitive":{
+                        "type": "letter",
+                        "letter": "l",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -105,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose3_Primitive":{
+                        "type": "letter",
+                        "letter": "i",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -95,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose4_Primitive":{
+                        "type": "letter",
+                        "letter": "c",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -85,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose5_Primitive":{
+                        "type": "letter",
+                        "letter": "k",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -75,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose6_Primitive":{
+                        "type": "letter",
+                        "letter": "-",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose7": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -65,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose7_Primitive":{
+                        "type": "letter",
+                        "letter": "t",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose8": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -55,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose8_Primitive":{
+                        "type": "letter",
+                        "letter": "o",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose9": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -45,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose9_Primitive":{
+                        "type": "letter",
+                        "letter": "-",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose10": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -35,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose10_Primitive":{
+                        "type": "letter",
+                        "letter": "c",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose11": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -25,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose11_Primitive":{
+                        "type": "letter",
+                        "letter": "h",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose12": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -15,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose12_Primitive":{
+                        "type": "letter",
+                        "letter": "o",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose13": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -5,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose13_Primitive":{
+                        "type": "letter",
+                        "letter": "o",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose14": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 5,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose14_Primitive":{
+                        "type": "letter",
+                        "letter": "s",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose15": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 15,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose15_Primitive":{
+                        "type": "letter",
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose17": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 25,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose17_Primitive":{
+                        "type": "letter",
+                        "letter": "-",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose18": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 35,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose18_Primitive":{
+                        "type": "letter",
+                        "letter": "t",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose19": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 45,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose19_Primitive":{
+                        "type": "letter",
+                        "letter": "h",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose20": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 55,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose20_Primitive":{
+                        "type": "letter",
+                        "letter": "e",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose21": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 65,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose21_Primitive":{
+                        "type": "letter",
+                        "letter": "-",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose22": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 75,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose22_Primitive":{
+                        "type": "letter",
+                        "letter": "b",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose23": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 85,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose23_Primitive":{
+                        "type": "letter",
+                        "letter": "a",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose24": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 95,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose24_Primitive":{
+                        "type": "letter",
+                        "letter": "l",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose25": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 105,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose25_Primitive":{
+                        "type": "letter",
+                        "letter": "l",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose26": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 115,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose26_Primitive":{
+                        "type": "letter",
+                        "letter": "o",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose27": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 125,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose27_Primitive":{
+                        "type": "letter",
+                        "letter": "o",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "choose28": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 135,
+                            "y": 75,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "choose28_Primitive":{
+                        "type": "letter",
+                        "letter": "n",
+                        "xy1": { "x": -5, "y": -10 },
+                        "xy2": { "x": 5, "y": 10 }
+                    }
+                }
+            },
+            "rider1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -25,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -15,
+                            "y": 0,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "ropes",
+                        "basket",
+                        "balloon"
+                    ]
+                }
+            },
+            "rider2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 25,
+                            "y": 0,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "ropes2",
+                        "basket2",
+                        "balloon2"
+                    ]
+                }
+            },
+            "ropes": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "ropeMat"
+                },
+                "children": {
+                    "nodesList": [
+                        "rope1",
+                        "rope2",
+                        "rope3",
+                        "rope4"
+                    ]
+                }
+            },
+            "ropes2": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "ropeMat2"
+                },
+                "children": {
+                    "nodesList": [
+                        "rope5",
+                        "rope6",
+                        "rope7",
+                        "rope8"
+                    ]
+                }
+            },
+            "balloon": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "balloonMat"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 4,
+                            "y": 4,
+                            "z": 4
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 40,
+                            "z": -15
+                        }
+                    }
+                ],
+                "children": {
+                    "balloonPrimitive": {
+                        "type": "lathe",
+                        "segments": 300,
+                        "controlpoints2D": [
+                            {
+                                "x": 3.0,
+                                "y": -4.0
+                            },
+                            {
+                                "x": 3.5960,
+                                "y": -3.2
+                            },
+                            {
+                                "x": 4.1683,
+                                "y": -2.4
+                            },
+                            {
+                                "x": 4.6939,
+                                "y": -1.6
+                            },
+                            {
+                                "x": 5.1521,
+                                "y": -0.8
+                            },
+                            {
+                                "x": 5.5244,
+                                "y": 0.0
+                            },
+                            {
+                                "x": 5.7961,
+                                "y": 0.8
+                            },
+                            {
+                                "x": 5.9563,
+                                "y": 1.6
+                            },
+                            {
+                                "x": 5.9987,
+                                "y": 2.4
+                            },
+                            {
+                                "x": 5.9215,
+                                "y": 3.2
+                            },
+                            {
+                                "x": 5.5,
+                                "y": 3.6
+                            },
+                            {
+                                "x": 5.1,
+                                "y": 3.9
+                            },
+                            {
+                                "x": 4.6,
+                                "y": 4.1
+                            },
+                            {
+                                "x": 4.1,
+                                "y": 4.3
+                            },
+                            {
+                                "x": 3.6,
+                                "y": 4.5
+                            },
+                            {
+                                "x": 3.0,
+                                "y": 4.6
+                            },
+                            {
+                                "x": 2.4,
+                                "y": 4.7
+                            },
+                            {
+                                "x": 1.9,
+                                "y": 4.8
+                            },
+                            {
+                                "x": 1.4,
+                                "y": 4.9
+                            },
+                            {
+                                "x": 1.0,
+                                "y": 4.9
+                            },
+                            {
+                                "x": 0.5,
+                                "y": 4.9
+                            },
+                            {
+                                "x": 0.0,
+                                "y": 4.9
+                            }
+                        ]
+                    }
+                }
+            },
+            "balloon2": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "balloonMat2"
+                },
+                "transforms": [
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 4,
+                            "y": 4,
+                            "z": 4
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 40,
+                            "z": -15
+                        }
+                    }
+                ],
+                "children": {
+                    "balloon2Primitive": {
+                        "type": "lathe",
+                        "segments": 300,
+                        "controlpoints2D": [
+                            {
+                                "x": 3.0,
+                                "y": -4.0
+                            },
+                            {
+                                "x": 3.5960,
+                                "y": -3.2
+                            },
+                            {
+                                "x": 4.1683,
+                                "y": -2.4
+                            },
+                            {
+                                "x": 4.6939,
+                                "y": -1.6
+                            },
+                            {
+                                "x": 5.1521,
+                                "y": -0.8
+                            },
+                            {
+                                "x": 5.5244,
+                                "y": 0.0
+                            },
+                            {
+                                "x": 5.7961,
+                                "y": 0.8
+                            },
+                            {
+                                "x": 5.9563,
+                                "y": 1.6
+                            },
+                            {
+                                "x": 5.9987,
+                                "y": 2.4
+                            },
+                            {
+                                "x": 5.9215,
+                                "y": 3.2
+                            },
+                            {
+                                "x": 5.5,
+                                "y": 3.6
+                            },
+                            {
+                                "x": 5.1,
+                                "y": 3.9
+                            },
+                            {
+                                "x": 4.6,
+                                "y": 4.1
+                            },
+                            {
+                                "x": 4.1,
+                                "y": 4.3
+                            },
+                            {
+                                "x": 3.6,
+                                "y": 4.5
+                            },
+                            {
+                                "x": 3.0,
+                                "y": 4.6
+                            },
+                            {
+                                "x": 2.4,
+                                "y": 4.7
+                            },
+                            {
+                                "x": 1.9,
+                                "y": 4.8
+                            },
+                            {
+                                "x": 1.4,
+                                "y": 4.9
+                            },
+                            {
+                                "x": 1.0,
+                                "y": 4.9
+                            },
+                            {
+                                "x": 0.5,
+                                "y": 4.9
+                            },
+                            {
+                                "x": 0.0,
+                                "y": 4.9
+                            }
+                        ]
+                    }
+                }
+            },
+            "basket": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -15,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "basketLateral1",
+                        "basketLateral2",
+                        "basketLateral3",
+                        "basketLateral4",
+                        "basketBase"
+                    ]
+                }
+            },
+            "basket2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -15,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "nodesList": [
+                        "basketLateral5",
+                        "basketLateral6",
+                        "basketLateral7",
+                        "basketLateral8",
+                        "basketBase2"
+                    ]
+                }
+            },
+            "basketLateral1": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basketMat"
+                },
+                "children": {
+                    "basketLateral1Primitive": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "xyz2": {
+                            "x": 30,
+                            "y": 20,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            "basketLateral5": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basketMat2"
+                },
+                "children": {
+                    "basketLateral5Primitive": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "xyz2": {
+                            "x": 30,
+                            "y": 20,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            "basketLateral2": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basketMat"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 90,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 14,
+                            "y": 0,
+                            "z": -14
+                        }
+                    }
+                ],
+                "children": {
+                    "basketLateral2Primitive": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "xyz2": {
+                            "x": 30,
+                            "y": 20,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            "basketLateral6": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basketMat2"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 90,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 14,
+                            "y": 0,
+                            "z": -14
+                        }
+                    }
+                ],
+                "children": {
+                    "basketLateral6Primitive": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "xyz2": {
+                            "x": 30,
+                            "y": 20,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            "basketLateral3": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basketMat"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 90,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -14,
+                            "y": 0,
+                            "z": -14
+                        }
+                    }
+                ],
+                "children": {
+                    "basketLateral3Primitive": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "xyz2": {
+                            "x": 30,
+                            "y": 20,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            "basketLateral7": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basketMat2"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 90,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -14,
+                            "y": 0,
+                            "z": -14
+                        }
+                    }
+                ],
+                "children": {
+                    "basketLateral7Primitive": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "xyz2": {
+                            "x": 30,
+                            "y": 20,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            "basketLateral4": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basketMat"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": -29
+                        }
+                    }
+                ],
+                "children": {
+                    "basketLateral4Primitive": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "xyz2": {
+                            "x": 30,
+                            "y": 20,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            "basketLateral8": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basketMat2"
+                },
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": -29
+                        }
+                    }
+                ],
+                "children": {
+                    "basketLateral8Primitive": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "xyz2": {
+                            "x": 30,
+                            "y": 20,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            "basketBase": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basketMat"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 90,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -9,
+                            "z": -15
+                        }
+                    }
+                ],
+                "children": {
+                    "basketBasePrimitive": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "xyz2": {
+                            "x": 30,
+                            "y": 30,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            "basketBase2": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "basketMat2"
+                },
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 90,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -9,
+                            "z": -15
+                        }
+                    }
+                ],
+                "children": {
+                    "basketBase2Primitive": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "xyz2": {
+                            "x": 30,
+                            "y": 30,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            "rope1": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -15,
+                            "y": 0,
+                            "z": -10
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -11,
+                            "y": 13,
+                            "z": -5
+                        }
+                    }
+                ],
+                "children": {
+                    "ropePrimitive1": {
+                        "type": "cylinder",
+                        "top": 0.5,
+                        "base": 0.5,
+                        "height": 40,
+                        "slices": 10,
+                        "stacks": 10,
+                        "capsclose": false
+                    }
+                }
+            },
+            "rope2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 15,
+                            "y": 0,
+                            "z": -10
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -11,
+                            "y": 13,
+                            "z": -24
+                        }
+                    }
+                ],
+                "children": {
+                    "ropePrimitive2": {
+                        "type": "cylinder",
+                        "top": 0.5,
+                        "base": 0.5,
+                        "height": 40,
+                        "slices": 10,
+                        "stacks": 10,
+                        "capsclose": false
+                    }
+                }
+            },
+            "rope3": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 15,
+                            "y": 0,
+                            "z": 10
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 11,
+                            "y": 13,
+                            "z": -24
+                        }
+                    }
+                ],
+                "children": {
+                    "ropePrimitive3": {
+                        "type": "cylinder",
+                        "top": 0.5,
+                        "base": 0.5,
+                        "height": 40,
+                        "slices": 10,
+                        "stacks": 10,
+                        "capsclose": false
+                    }
+                }
+            },
+            "rope4": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -15,
+                            "y": 0,
+                            "z": 10
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 11,
+                            "y": 13,
+                            "z": -5
+                        }
+                    }
+                ],
+                "children": {
+                    "ropePrimitive4": {
+                        "type": "cylinder",
+                        "top": 0.5,
+                        "base": 0.5,
+                        "height": 40,
+                        "slices": 10,
+                        "stacks": 10,
+                        "capsclose": false
+                    }
+                }
+            },
+            "rope5": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -15,
+                            "y": 0,
+                            "z": -10
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -11,
+                            "y": 13,
+                            "z": -5
+                        }
+                    }
+                ],
+                "children": {
+                    "ropePrimitive5": {
+                        "type": "cylinder",
+                        "top": 0.5,
+                        "base": 0.5,
+                        "height": 40,
+                        "slices": 10,
+                        "stacks": 10,
+                        "capsclose": false
+                    }
+                }
+            },
+            "rope6": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 15,
+                            "y": 0,
+                            "z": -10
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -11,
+                            "y": 13,
+                            "z": -24
+                        }
+                    }
+                ],
+                "children": {
+                    "ropePrimitive6": {
+                        "type": "cylinder",
+                        "top": 0.5,
+                        "base": 0.5,
+                        "height": 40,
+                        "slices": 10,
+                        "stacks": 10,
+                        "capsclose": false
+                    }
+                }
+            },
+            "rope7": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 15,
+                            "y": 0,
+                            "z": 10
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 11,
+                            "y": 13,
+                            "z": -24
+                        }
+                    }
+                ],
+                "children": {
+                    "ropePrimitive7": {
+                        "type": "cylinder",
+                        "top": 0.5,
+                        "base": 0.5,
+                        "height": 40,
+                        "slices": 10,
+                        "stacks": 10,
+                        "capsclose": false
+                    }
+                }
+            },
+            "rope8": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -15,
+                            "y": 0,
+                            "z": 10
+                        }
+                    },
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 11,
+                            "y": 13,
+                            "z": -5
+                        }
+                    }
+                ],
+        
+                "children": {
+                    "ropePrimitive8": {
+                        "type": "cylinder",
+                        "top": 0.5,
+                        "base": 0.5,
+                        "height": 40,
+                        "slices": 10,
+                        "stacks": 10,
+                        "capsclose": false
+                    }
+                }
+            
+            }
+        }
+    }
+}

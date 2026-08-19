@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{e5cf3fa5-785d-4045-8099-063dba8d45de}">
+		<property name="assetPath">
+			<value>Music/Mini Games/Mini 02.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>99.432000000000002</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{76f1460c-200b-47e5-a811-8119118438b9}</destination>
+		</relationship>
+	</object>
+</objects>

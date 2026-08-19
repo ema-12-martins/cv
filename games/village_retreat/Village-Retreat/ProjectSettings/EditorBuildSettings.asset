@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenuUI.unity
+    guid: 35eb5224a9ef225489e010fa5b58a4bc
+  - enabled: 1
+    path: Assets/Scenes/Island.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MinigameScene_ElectricalConnections.unity
+    guid: 334894f98ec95064789c8a47f87aabf8
+  - enabled: 1
+    path: Assets/Scenes/MinigameScene_PaintingWalls.unity
+    guid: 8f7c82b2c988cbc458338e7042f90237
+  - enabled: 1
+    path: Assets/Scenes/MinigameScene_WoodChopping.unity
+    guid: 99c349f93194db74492419e00511c7b9
+  - enabled: 1
+    path: Assets/Scenes/MinigameScene_ZenGarden.unity
+    guid: c748744db3d93bb4cb4e157fa857682b
+  - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: 5dff3cdc94ef8ca46939ad219e76b922
+  - enabled: 1
+    path: Assets/Scenes/FinalMenuUI.unity
+    guid: 4378629d43bcf85419cd51c6188590e7
+  - enabled: 0
+    path: Assets/Scenes/MinigameScene_MixingMortar.unity
+    guid: 93e7517fa3253c745b508558dd68375a
+  - enabled: 0
+    path: Assets/Scenes/GameScene.unity
+    guid: 9963002396bf36c4a849591d020643f9
+  - enabled: 0
+    path: Assets/Scenes/CharacterSelectScene.unity
+    guid: 4d348cb9f59f1c94cb7a909ae00da052
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_UseUCBPForAssetBundles: 0
