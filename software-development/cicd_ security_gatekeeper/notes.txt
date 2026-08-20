@@ -1,0 +1,1 @@
+    - semgrep scan --config p/owasp-top-ten --config p/python --config p/flask --config p/secrets --config .semgrep.yaml --json -o semgrep-report.json . || echo "Semgrep completed with findings"

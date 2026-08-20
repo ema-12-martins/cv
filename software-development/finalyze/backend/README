@@ -1,0 +1,268 @@
+# ExpenseCategory
+
+Criar categoria:
+~~~
+curl -X POST http://localhost:8080/api/expense_categories \
+     -H "Content-Type: application/json" \
+     -d '{"name": "Transporte"}'
+~~~
+
+Listar todas as categorias:
+~~~
+curl -X GET http://localhost:8080/api/expense_categories
+~~~
+
+Obter categoria por ID:
+~~~
+curl -X GET http://localhost:8080/api/expense_categories/1
+~~~
+
+Atualizar categoria:
+~~~
+curl -X PUT http://localhost:8080/api/expense_categories/1 \
+     -H "Content-Type: application/json" \
+     -d '{"name": "Alimentação"}'
+~~~
+
+Deletar categoria:
+~~~
+curl -X DELETE http://localhost:8080/api/expense_categories/1
+~~~
+
+# User
+
+Criar um user:
+~~~
+curl -X POST http://localhost:8080/api/users \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "João Silva",
+    "email": "joao@example.com",
+    "mobileNumber": 912345678,
+    "birthdate": "1990-01-01",
+    "passwordHash": "hashed_password",
+    "lastLogin": "2024-04-10",
+    "amountSaved": 123.45
+  }'
+~~~
+
+Listar todos os users:
+~~~
+curl -X GET http://localhost:8080/api/users
+~~~
+
+Obter um user por ID:
+~~~
+curl -X GET http://localhost:8080/api/users/1
+~~~
+
+Atualizar um user:
+~~~
+curl -X PUT http://localhost:8080/api/users/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "João Atualizado",
+    "email": "joao.novo@example.com",
+    "mobileNumber": 911223344,
+    "birthdate": "1990-01-01",
+    "passwordHash": "new_hashed_password",
+    "lastLogin": "2025-04-10",
+    "amountSaved": 200.00
+  }'
+~~~
+
+Deletar um user:
+~~~
+curl -X DELETE http://localhost:8080/api/users/1
+~~~
+
+# ExpenseLabel
+
+Criar um expense_label:
+~~~
+curl -X POST http://localhost:8080/api/expense-labels \
+  -H "Content-Type: application/json" \
+  -d '{
+    "userId": 1,
+    "categoryId": 1,
+    "name": "Gasolina",
+    "target": 150.00,
+    "spent": 60.25
+  }'
+
+~~~
+
+Listar todos os expense_labels:
+~~~
+curl -X GET http://localhost:8080/api/expense-labels
+~~~
+
+Obter um expense_label por ID:
+~~~
+curl -X GET http://localhost:8080/api/expense-labels/1
+~~~
+
+Atualizar um expense_label:
+~~~
+curl -X PUT http://localhost:8080/api/expense-labels/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "userId": 1,
+    "categoryId": 1,
+    "name": "Gasolina Atualizada",
+    "target": 200.00,
+    "spent": 80.50
+  }'
+~~~
+
+Deletar um expense_label:
+~~~
+curl -X DELETE http://localhost:8080/api/expense-labels/1
+~~~
+
+# Expense
+
+POST criar nova expense:
+~~~
+curl -X POST http://localhost:8080/api/expenses \
+  -H "Content-Type: application/json" \
+  -d '{
+    "labelId": 1,
+    "userId": 1,
+    "value": 25.50,
+    "occurrenceDate": "2025-04-09",
+    "insertionDate": "2025-04-10"
+  }'
+~~~
+
+GET todas as expenses:
+~~~
+curl -X GET http://localhost:8080/api/expenses
+~~~
+
+GET uma expense por ID:
+~~~
+curl -X GET http://localhost:8080/api/expenses/1
+~~~
+
+
+PUT atualizar uma expense existente:
+~~~
+curl -X PUT http://localhost:8080/api/expenses/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "labelId": 1,
+    "userId": 1,
+    "value": 30.75,
+    "occurrenceDate": "2025-04-09",
+    "insertionDate": "2025-04-10"
+  }'
+~~~
+
+DELETE uma expense:
+~~~
+curl -X DELETE http://localhost:8080/api/expenses/1
+~~~
+
+# FixedExpense
+
+Criar uma fixed_expense (POST):
+~~~
+curl -X POST http://localhost:8080/api/fixed_expenses \
+  -H "Content-Type: application/json" \
+  -d '{
+    "userId": 1,
+    "labelId": 1,
+    "value": 150.75,
+    "startDate": "2024-04-01",
+    "frequency": "01:00:00",
+    "insertionDate": "2024-04-10"
+  }'
+~~~
+
+Listar todas as fixed_expenses (GET):
+~~~
+curl http://localhost:8080/api/fixed_expenses
+~~~
+
+Obter uma fixed_expense específica por ID (GET):
+~~~
+curl http://localhost:8080/api/fixed_expenses/1
+~~~
+
+Atualizar uma fixed_expense (PUT):
+~~~
+curl -X PUT http://localhost:8080/api/fixed_expenses/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "userId": 1,
+    "labelId": 1,
+    "value": 200.00,
+    "startDate": "2024-04-01",
+    "frequency": "00:30:00",
+    "insertionDate": "2024-04-10"
+  }'
+~~~
+
+Apagar uma fixed_expense (DELETE):
+~~~
+curl -X DELETE http://localhost:8080/api/fixed_expenses/1
+~~~
+
+# ExpenseTarget
+
+Criar um novo Expense Target:
+~~~
+curl -X POST http://localhost:8080/api/expense_targets \
+  -H "Content-Type: application/json" \
+  -d '{
+    "expenseCategoryId": 1,
+    "userId": 1,
+    "target": 500
+  }'
+~~~
+
+Buscar todos os Expense Targets:
+~~~
+curl http://localhost:8080/api/expense_targets
+~~~
+
+Buscar um Expense Target específico:
+~~~
+curl http://localhost:8080/api/expense_targets/1/1
+~~~
+
+Atualizar um Expense Target:
+~~~
+curl -X PUT http://localhost:8080/api/expense_targets/1/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "expenseCategoryId": 1,
+    "userId": 1,
+    "target": 750
+  }'
+~~~
+
+Apagar um Expense Target:
+~~~
+curl -X DELETE http://localhost:8080/api/expense_targets/1/1
+~~~
+
+# Windows
+
+~~~
+curl -X POST http://localhost:8080/api/expense_categories -H "Content-Type: application/json" -d "{\"name\": \"Transporte\"}"
+~~~
+
+
+~~~
+curl -X POST http://localhost:8080/api/users -H "Content-Type: application/json" -d "{\"name\":\"João Silva\",\"email\":\"joao@example.com\",\"mobileNumber\":912345678,\"birthdate\":\"1990-01-01\",\"passwordHash\":\"hashed_password\",\"lastLogin\":\"2024-04-10\",\"amountSaved\":123.45}"
+~~~
+
+~~~
+curl -X POST http://localhost:8080/api/expense-labels -H "Content-Type: application/json" -d "{\"userId\":1,\"categoryId\":1,\"name\":\"Gasolina\",\"target\":150.00,\"spent\":60.25}"
+~~~
+
+~~~
+curl -X POST http://localhost:8080/api/expenses -H "Content-Type: application/json" -d "{\"labelId\":1,\"userId\":1,\"value\":25.50,\"occurrenceDate\":\"2025-04-09\",\"insertionDate\":\"2025-04-10\"}"
+~~~

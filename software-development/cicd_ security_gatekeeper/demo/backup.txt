@@ -1,0 +1,2 @@
+Timestamp: 2025-11-29T11:39:01.154979Event: POST /usersDetails: {'username': 'joao'}
+Timestamp: 2025-11-29T11:39:47.271328Event: POST /usersDetails: {'username': 'joao', 'password': '1234'}

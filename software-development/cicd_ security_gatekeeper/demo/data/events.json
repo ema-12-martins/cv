@@ -1,0 +1,45 @@
+
+[    
+    {
+        "id": 1,
+        "user_id": 1,
+        "title": "Dentist",
+        "date": "2025-11-20",
+        "description": "Annual check"
+    },
+    {
+        "id": 2,
+        "user_id": 1,
+        "title": "Team Meeting",
+        "date": "2025-11-22",
+        "description": "Weekly sync with the team"
+    },
+    {
+        "id": 3,
+        "user_id": 2,
+        "title": "Gym",
+        "date": "2025-11-20",
+        "description": "Leg day"
+    },
+    {
+        "id": 4,
+        "user_id": 2,
+        "title": "Birthday Party",
+        "date": "2025-11-25",
+        "description": "Friend's birthday"
+    },
+    {
+        "id": 5,
+        "user_id": 3,
+        "title": "Study Session",
+        "date": "2025-11-21",
+        "description": "Review security topics"
+    },
+    {
+        "id": 6,
+        "user_id": 3,
+        "title": "Groceries",
+        "date": "2025-11-23",
+        "description": "Weekly shopping"
+    }
+]

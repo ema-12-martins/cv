@@ -1,0 +1,15 @@
+version: 1
+
+# Global defaults
+defaults:
+  action: suppress            # "downgrade"
+  target_severity: LOW        # used when action == downgrade
+
+waivers:
+  - id: "semgrep-no-eval-anywhere"
+    description: "Temporarily accept no-eval findings project-wide."
+    match:
+      tool: "semgrep"
+      rule: "no-eval"
+    action: "suppress"
+    expires_at: "2025-12-25T23:59:59Z"

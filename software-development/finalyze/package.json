@@ -1,0 +1,23 @@
+{
+  "name": "lgp-26",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  },
+  "dependencies": {
+    "expo-permissions": "^14.4.0",
+    "react-native-chart-kit": "^6.12.0",
+    "react-native-svg": "^15.11.2",
+    "react-native-vector-icons": "^10.2.0"
+  }
+}
