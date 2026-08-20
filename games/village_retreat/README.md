@@ -186,14 +186,14 @@ Built in **Unity**, chosen mainly for its flexible input system (ideal for confi
 
 ---
 
-## Team F
+## Team
 
 **Developers**
-- João Alves — 202108670
-- Eduardo Sousa — 202103342
-- Ema Martins — 202402794
-- Igor Andrade — 202108674
+- João Alves
+- Eduardo Sousa
+- Ema Martins
+- Igor Andrade
 
 **Sound Team**
-- Linda Rodrigues — 202005545
-- Ângela Costa — 202401679
+- Linda Rodrigues
+- Ângela Costa
