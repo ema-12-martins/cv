@@ -1,0 +1,146 @@
+{
+	"add-field-type": [
+        {
+            "name":"longText",
+            "class":"solr.TextField",
+            "indexAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class":"solr.StopFilterFactory", "words":"stopwords.txt", "ignoreCase":true},
+                    {"class":"solr.SynonymGraphFilterFactory", "synonyms":"synonyms.txt", "ignoreCase":true, "expand":true}
+                ]
+            },
+            "queryAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class":"solr.StopFilterFactory", "words":"stopwords.txt", "ignoreCase":true},
+                    {"class":"solr.SynonymGraphFilterFactory", "synonyms":"synonyms.txt", "ignoreCase":true, "expand":true}
+                ]
+            }
+        },
+        {
+            "name":"shortText",
+            "class":"solr.TextField",
+            "indexAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"}
+                ]
+            },
+            "queryAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"}
+                ]
+            }
+        },
+        {
+            "name":"simpleText",
+            "class":"solr.TextField"
+        },
+        {
+            "name":"IntValues",
+            "class":"solr.IntPointField"
+        },
+        {
+            "name": "songVector",
+            "class": "solr.DenseVectorField",
+            "vectorDimension": 768,
+            "similarityFunction": "cosine",
+            "knnAlgorithm": "hnsw"
+        }
+    
+    ],
+    "add-field": [
+        {
+            "name": "lyrics",
+            "type": "longText",
+            "indexed": true
+        },
+        {
+            "name": "title",
+            "type": "longText",
+            "indexed": true
+        },
+        {
+            "name": "views",
+            "type": "IntValues",
+            "indexed": false
+        },
+        {
+            "name": "artist",
+            "type": "shortText",
+            "indexed": true
+        },
+        {
+            "name": "tag",
+            "type": "longText",
+            "indexed": true
+        },
+        {
+            "name": "features",
+            "type": "longText",
+            "indexed": true
+        },
+        {
+            "name": "lastfm_different_listeners",
+            "type": "IntValues",
+            "indexed": false
+        },
+        {
+            "name": "lastfm_playcount",
+            "type": "IntValues",
+            "indexed": false
+        },
+        {
+            "name": "lastfm_tags",
+            "type": "longText",
+            "indexed": true
+        },
+        {
+            "name": "lastfm_content_song",
+            "type": "longText",
+            "indexed": true
+        },
+        {
+            "name": "lastfm_content_artist",
+            "type": "longText",
+            "indexed": true
+        },
+        {
+            "name": "lastfm_image_artist",
+            "type": "simpleText",
+            "indexed": false
+        },
+        {
+            "name": "lastfm_image_album",
+            "type": "simpleText",
+            "indexed": false
+        },
+        {
+            "name": "album",
+            "type": "simpleText",
+            "indexed": true
+        },
+        {
+            "name": "vector",
+            "type": "songVector",
+            "indexed": true,
+            "stored": true
+        }
+    ]
+}

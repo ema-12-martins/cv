@@ -1,0 +1,25 @@
+passado, história, eventos antigos, época anterior, memórias, tempos idos, retrocesso, antes, antigamente,podre,  pretérito,  espantado,  maduro,  antigo,  surpreso,  constrangido,  obsoleto,  anterior,  assado,  cozido,  encabulado,  envelhecido,  frito, ontem, tempo, distante, lembrança, antigo, velho
+empoderamento, autonomia, fortalecimento, poder pessoal, emancipação, autoestima, desenvolvimento pessoal, afirmação de si, autoafirmação, mim
+reflexão, introspecção, análise pessoal,meditação,  prudência,  cautela,  juízo,  tino,  discernimento,  jeito,  ricochete,  sensatez,  contemplação,  pensamento,  consideração,  análise,  cogitação,  avaliação,  deliberação, pensamento profundo, meditação, autoavaliação, contemplação, ponderação, juízo, vida
+romance, amor,afeto,  amizade,  adoração,  devoção,  zelo,  cuidado,  afabilidade,  fraternidade,  simpatia,  ternura,  afinidade,  apreço,  benquerença,  atração,  paixão,  desejo, relacionamento amoroso, envolvimento afetivo, paixão, atração, história de amor, conexão emocional, paixão, calor, namorada
+tempo, fase,  período,  temporada,  pulsação,  andamento,  época,duração, momento, período, cronologia, instante, era, época, jornada, passagem do tempo
+mim, eu,consciência,  ego,  personalidade,  individualidade,  egoísmo, a mim mesmo, pessoalmente, meu ser, minha identidade, minha pessoa, eu próprio, sobre mim, para mim
+vida,espírito,  existência,  prática,  biografia,  vitalidade ,existência, jornada, experiência de vida, cotidiano, biografia, viver, realidade, caminho da vida, essência, vitalidade, dias
+felicidade,prazenteiro,  próspero,  vantajoso,  alegre,  contente,  jubiloso,  satisfeito,  afortunado,  fausto, alegria, contentamento, prazer, bem-estar, satisfação, felicidade plena, realização
+amizade,prazenteiro,  próspero,  vantajoso,  alegre,  contente,  jubiloso,  satisfeito,  afortunado,  fausto, companheirismo, lealdade, afeto, vínculo, relação, parceria, confiança
+família,casta,  espécie,  estirpe,  genealogia,  linhagem,  qualidade,  raça,  grupo,  geração, parentes, laços familiares, núcleo familiar, parentesco, convivência familiar, lar, entes queridos
+trabalho,esmero,  lavor,  labuta,  labor,  afã,  responsabilidade,  tarefa,  serviço,  ofício,  ocupação,  emprego,  lida,  trabalheira,  dificuldade, emprego, ocupação, carreira, profissão, atividade profissional, ofício, labor
+conhecimento,competência,  cultura,  instrução,  erudição,  recibo,  informação, sabedoria, aprendizado, cultura, entendimento, informação, instrução, formação
+saúde,força,  robustez,  saudação,  vigor,  brinde,  energia,  vitalidade,  resistência,  potência,  disposição,  satisfação,  ânimo,  tranquilidade,  conforto,  aconchego,  comodidade, bem-estar, vigor, condição física, qualidade de vida, sanidade, resistência, vitalidade
+educação,pedagogia,  atenção,  civilidade,  afabilidade,  amabilidade,  cortesia,  delicadeza,  gentileza,  graciosidade,  obséquio,  ensino,  instrução,  didática, ensino, aprendizado, formação acadêmica, instrução, escolaridade, pedagogia, conhecimento
+desenvolvimento,propagação,  prolongamento,  crescimento,  incremento,  evolução,  desenvolução,  avanço,  aproveitamento,  eclosão,  progresso,  expansão,  aperfeiçoamento,  maturação,  aprimoramento,  ampliação, crescimento, evolução, progresso, avanço, aprimoramento, expansão, transformação
+cultura,instrução,  saber,  cultivo,  apuro,  conhecimento,  competência,  erudição,  estudo,  sabedoria,  sapiência, tradição, costumes, valores, sociedade, identidade cultural, patrimônio, raízes
+esperança,confiança,  espera,  expectativa,  perspectiva,  fé,  possibilidade,  probabilidade,  ilusão,  fantasia,  sonho,  aguardo, otimismo, fé, crença, expectativa positiva, visão de futuro, confiança no futuro
+religião, deus, crença, fé, jesus, pastor, luz, padre, cruz,piedade,  divindade,  culto,  doutrina,  crença,  fé,  devoção
+bom, patriarcal,  piedoso,  generoso,  benevolente,  benigno,  benévolo,  bondoso,  caridoso,  caritativo,  clemente,  humano,  indulgente,  misericordioso
+grande, amplo,  profundo,  longo,  enorme,  alto,  gigante,  excessivo,  infinito,  imenso,  forte,  intenso,  violento,  rico,  poderoso,  influente,  desenvolvido,  criado,  adulto,  bom,  excelente,  notável,  importante,  relevante,  complexo,  principal,  fundamental,  essencial
+bem, superior,  supremo,  maioral,  primeiro,  excelente,  soberano,  sumo,  superno,  súpero,  ideal,  bom,  perfeito,  exemplar,  modelar,  bem
+pior, péssimo,  último,  insignificante,  menor,  inconveniente,  imprudente,  insensato,  prejuízo,  dano,  incômodo,  piormente
+certo, evidente,  exato,  patente,  perceptível,  manifesto,  claro,  notório,  visível,  seguro,  convencido,  certamente,  corretamente,  correto,  certeiro
+último, derradeiro,  extremo,  final,  terminal,  terminante,  presente,  atual,  antecedente,  baixo,  vil,  inferior,  decisivo
+proprio, inerente,  apropriado,  verdadeiro,  mensageiro

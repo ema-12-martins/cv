@@ -1,0 +1,90 @@
+{
+	"add-field-type": [
+        {
+            "name": "songVector",
+            "class": "solr.DenseVectorField",
+            "vectorDimension": 768,
+            "similarityFunction": "cosine",
+            "knnAlgorithm": "hnsw"
+        }
+    
+    ],
+    "add-field": [
+        {
+            "name": "lyrics",
+            "type": "text_general",
+            "indexed": true
+        },
+        {
+            "name": "title",
+            "type": "text_general",
+            "indexed": true
+        },
+        {
+            "name": "views",
+            "type": "text_general",
+            "indexed": false
+        },
+        {
+            "name": "artist",
+            "type": "text_general",
+            "indexed": true
+        },
+        {
+            "name": "tag",
+            "type": "text_general",
+            "indexed": true
+        },
+        {
+            "name": "features",
+            "type": "text_general",
+            "indexed": true
+        },
+        {
+            "name": "lastfm_different_listeners",
+            "type": "pint",
+            "indexed": false
+        },
+        {
+            "name": "lastfm_playcount",
+            "type": "pint",
+            "indexed": false
+        },
+        {
+            "name": "lastfm_tags",
+            "type": "text_general",
+            "indexed": true
+        },
+        {
+            "name": "lastfm_content_song",
+            "type": "text_general",
+            "indexed": true
+        },
+        {
+            "name": "lastfm_content_artist",
+            "type": "text_general",
+            "indexed": true
+        },
+        {
+            "name": "lastfm_image_artist",
+            "type": "text_general",
+            "indexed": false
+        },
+        {
+            "name": "lastfm_image_album",
+            "type": "text_general",
+            "indexed": false
+        },
+        {
+            "name": "album",
+            "type": "text_general",
+            "indexed": true
+        },
+        {
+            "name": "vector",
+            "type": "songVector",
+            "indexed": true,
+            "stored": true
+        }
+    ]
+}

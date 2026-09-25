@@ -1,0 +1,15 @@
+{
+    "query": "pop AND passado",
+    "fields": "*,score",
+    "params": {
+        "defType": "edismax",
+        "q.op": "AND",
+        "sort": "score desc",
+        "start": "0",
+        "rows": "30",
+        "qf": "lyrics^4 title^2 lastfm_content_artist^3 tag^10 artist",
+        "pf": "lyrics^6 lastfm_content_artist^6 title^10",
+        "ps": "3"
+    }
+}
+ 

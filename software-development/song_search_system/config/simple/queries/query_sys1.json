@@ -1,0 +1,11 @@
+{
+    "query": "religião",
+    "fields": "*,score",
+    "params": {
+        "defType": "edismax",
+        "sort": "score desc",
+        "start": "0",
+        "rows": "30",
+        "qf": "lyrics title lastfm_content_artist tag artist"
+    }
+}
