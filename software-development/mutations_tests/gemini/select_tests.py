@@ -11,7 +11,7 @@ query = "This is the context about what I expect my program to do:\n" + context 
 
 
 #Define the key, the model and make the query to the gemini
-genai.configure(api_key="AIzaSyBxLCcSm4M2rvOfJjkKLWdpKyp76GSsyDk")
+genai.configure(api_key=#ADD HERE KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 response = model.generate_content(query)
 
